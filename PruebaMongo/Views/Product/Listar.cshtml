@@ -1,0 +1,35 @@
+﻿@model List<PruebaMongo.Models.Product>
+@{
+    ViewData["Title"] = "Todos";
+}
+
+<div>
+    <table class="table bg-white container">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Fecha Expiracion</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Stock</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row"></th>
+                    <td>@item.Name</td>
+                    <td>@item.ExpiryDate</td>
+                    <td>@item.Category</td>
+                    <td>@item.Stock</td>
+                    <td><a href="/Product/Detalle/@item.Id">ver</a></td>
+
+                </tr>
+            }
+            <a class="btn-secondary" href="/Product/Agregar/">Agregar</a>
+        </tbody>
+
+    </table>
+</div>

@@ -1,0 +1,36 @@
+﻿@model PruebaMongo.Models.Product;
+@{
+}
+
+
+
+<div>
+
+
+    <table class="table container; padding-top:50px">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Fecha de Alta</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Editar</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>@Model.Name</td>
+                <td>@Model.Category</td>
+                <td>@Model.ExpiryDate</td>
+                <td>@Model.Stock</td>
+                <td><a href="/Product/Modificar/@Model.Id">Editar</a></td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

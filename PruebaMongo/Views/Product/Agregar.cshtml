@@ -1,0 +1,39 @@
+﻿@model PruebaMongo.Models.Product;
+@{
+}
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<div style="display:flex; justify-content:center">
+    <form method="post" enctype="multipart/form-data" asp-action="Agregar" asp-controller="Product" style="width:800px; background-color:gray; margin-top:30px">
+        <h1>Agregar Producto</h1>
+
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label asp-for="@Model.Name">Nombre Producto</label>
+            <input asp-for="@Model.Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Stock">Stock</label>
+            <input asp-for="@Model.Stock" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+            <span asp-validation-for="@Model.Stock" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Category">Categoria</label>
+            <input asp-for="@Model.Category" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+            <span asp-validation-for="@Model.Category" class="text-danger"></span>
+        </div>
+
+
+
+        <br />
+
+        <br />
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>
