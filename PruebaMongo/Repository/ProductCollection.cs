@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 using PruebaMongo.Models;
 
 namespace PruebaMongo.Repository
@@ -25,12 +26,23 @@ namespace PruebaMongo.Repository
 
         public List<Product> GetAllProducts()
         {
-            return Collection.Find(new BsonDocument()).ToList(); //new BsonDocument() manda un documento vacio
+            return Collection.AsQueryable().ToList(); // expresion en LINQ
+            //return Collection.Find(new BsonDocument()).ToList(); //new BsonDocument() manda un documento vacio
         }
 
         public Product GetProductByID(string id)
         {
-            return Collection.Find(new BsonDocument { { "_id", new ObjectId(id) } }).First();
+            var query = Collection.AsQueryable().FirstOrDefault(document => document.Id == new ObjectId(id));
+            if(query != null)
+            {
+                return query;
+            }
+            else
+            {
+                return null;
+            }
+          // return Collection.AsQueryable().Where(document => document.Id == new ObjectId(id)).Select(document => document.Product);
+            //return Collection.Find(new BsonDocument { { "_id", new ObjectId(id) } }).First();
         }
 
         public void InsertProduct(Product product)

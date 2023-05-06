@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vPpiASXlMj5CK8SfqPuCMGPwVq4H+08RkuOBChJ+d5viE56J6Azj2vlNsuPwmriUYoDGbaD6nfocij7ryM11Tw==",
+  "dgSpecHash": "XeMgHHJBpg2LH+1/oHkCTPF8BT7tnO89vZ/DSvt+7+kT/3PfzfQ27mDaSU5XgbADa8eor6Q59BhKyMSiMnADfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.bson\\2.19.1\\mongodb.bson.2.19.1.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.driver\\2.19.1\\mongodb.driver.2.19.1.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.driver.core\\2.19.1\\mongodb.driver.core.2.19.1.nupkg.sha512",
+    "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.driver.linq.asyncenumerable\\2.15.4\\mongodb.driver.linq.asyncenumerable.2.15.4.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.libmongocrypt\\1.7.0\\mongodb.libmongocrypt.1.7.0.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",

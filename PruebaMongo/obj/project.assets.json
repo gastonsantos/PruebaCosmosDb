@@ -337,6 +337,18 @@
           }
         }
       },
+      "MongoDB.Driver.Linq.AsyncEnumerable/2.15.4": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Driver": "2.15.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/MongoDB.Driver.Linq.AsyncEnumerable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.Linq.AsyncEnumerable.dll": {}
+        }
+      },
       "MongoDB.Libmongocrypt/1.7.0": {
         "type": "package",
         "compile": {
@@ -981,6 +993,20 @@
         "packageIcon.png"
       ]
     },
+    "MongoDB.Driver.Linq.AsyncEnumerable/2.15.4": {
+      "sha512": "rtcpDix4YyRLNOS6Xq2kKB2x1W6P4FlZqmKVsx6Ve8M8LJywpGE8pyZtd6zPRrnO7wv3t4nMaH5FdEGwnb7O2g==",
+      "type": "package",
+      "path": "mongodb.driver.linq.asyncenumerable/2.15.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/netstandard2.1/MongoDB.Driver.Linq.AsyncEnumerable.dll",
+        "mongodb.driver.linq.asyncenumerable.2.15.4.nupkg.sha512",
+        "mongodb.driver.linq.asyncenumerable.nuspec"
+      ]
+    },
     "MongoDB.Libmongocrypt/1.7.0": {
       "sha512": "p9+peTZX63nGHskOLhvhfBtrknxNg1RzXepE07rPozuCGz27bMjCcQyvn2YByg0L3YEcNWdTmI4BlnG/5RF+5Q==",
       "type": "package",
@@ -1227,7 +1253,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.5",
-      "MongoDB.Driver >= 2.19.1"
+      "MongoDB.Driver >= 2.19.1",
+      "MongoDB.Driver.Linq.AsyncEnumerable >= 2.15.4"
     ]
   },
   "packageFolders": {
@@ -1276,6 +1303,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.19.1, )"
+          },
+          "MongoDB.Driver.Linq.AsyncEnumerable": {
+            "target": "Package",
+            "version": "[2.15.4, )"
           }
         },
         "imports": [

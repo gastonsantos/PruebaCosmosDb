@@ -108,3 +108,4 @@ C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo\obj\De
 C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo\obj\Debug\net6.0\PruebaMongo.csproj.CopyComplete
 C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo\obj\Debug\net6.0\PruebaMongo.genruntimeconfig.cache
 C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo\obj\Debug\net6.0\ref\PruebaMongo.dll
+C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo\bin\Debug\net6.0\MongoDB.Driver.Linq.AsyncEnumerable.dll
