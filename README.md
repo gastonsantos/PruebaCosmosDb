@@ -4,8 +4,12 @@ TP WEB 3
 
 
 Si API de Azure CosmosDB y Azure Cosmos DB for MongoDB(vCore) son lo mismo?
+
+
 Si son lo mismo cuando se crea un Cluster de Azure Cosmos DB for MongoDB se genera una API de Azure CosmosDB para MongoDB
 Como funciona?
+
+
 La API de Azure Cosmos DB para cuenta de MongoDB proporciona una capa de compatibilidad que te permite utilizar Azure Cosmos DB como una base de datos compatible con MongoDB. A continuación, se explica cómo funciona:
 Creación de una cuenta de Azure Cosmos DB: En primer lugar, debes crear una cuenta de Azure Cosmos DB en el portal de Azure. Durante la creación, selecciona la opción "API para cuenta de MongoDB" como modelo de programación.
 Configuración de la cuenta: Después de crear la cuenta, puedes configurar opciones como la ubicación geográfica, el nivel de escalabilidad y la consistencia.
@@ -16,6 +20,8 @@ Es importante tener en cuenta que, aunque la API de Azure Cosmos DB para cuenta 
 
 
 Como funciona a Nivel Tecnico?
+
+
 A nivel técnico, la API de Azure Cosmos DB para cuentas de MongoDB implementa un traductor y un mapeo entre las operaciones de MongoDB y las operaciones subyacentes en Azure Cosmos DB. Esto permite que las aplicaciones que utilizan la API de MongoDB se comuniquen con Azure Cosmos DB sin requerir modificaciones significativas en el código existente.
 Cuando se realiza una operación utilizando la API de Azure Cosmos DB para cuentas de MongoDB, la API traduce esa operación en una forma compatible con Azure Cosmos DB. A continuación, se realiza la operación en el backend de Azure Cosmos DB utilizando sus capacidades de almacenamiento y administración de datos distribuidos. El resultado de la operación se devuelve a la aplicación como si se hubiera realizado directamente en una base de datos de MongoDB.
 Cuando una aplicación realiza una operación utilizando la API de Azure Cosmos DB para cuentas de MongoDB, el siguiente proceso ocurre a nivel técnico:
@@ -30,7 +36,9 @@ Es importante destacar que, aunque la API de Azure Cosmos DB para cuentas de Mon
 
 
 
-Que es DbContext en Entity Frameework.
+Que es DbContext en Entity Frameework?
+
+
 El DbContext es una clase fundamental en Entity Framework, un framework de mapeo objeto-relacional (ORM) desarrollado por Microsoft. Es una clase que actúa como una puerta de entrada al ORM y se utiliza para interactuar con la base de datos.
 El DbContext en Entity Framework representa una sesión de trabajo con la base de datos y se utiliza para realizar operaciones de consulta (lectura) y modificación (escritura) en los datos. Proporciona una interfaz para realizar consultas LINQ y ejecutar comandos de base de datos, y también administra el seguimiento de los cambios en los objetos de entidad.
 El DbContext se crea generalmente como una clase derivada de la clase base DbContext proporcionada por Entity Framework. Al derivar de DbContext, puedes definir conjuntos de entidades, que representan las tablas o vistas en la base de datos, y luego acceder a estas entidades para realizar operaciones de base de datos.
@@ -41,6 +49,7 @@ En resumen, el DbContext es una clase central en Entity Framework que proporcion
 
 
 Que son las Consultas LINQ.
+
 
 Las consultas LINQ (Language Integrated Query, consulta integrada en el lenguaje) son una característica de C# (y otros lenguajes de programación compatibles) que permite realizar consultas y manipulaciones de datos de manera intuitiva y uniforme sobre diferentes fuentes de datos, como colecciones de objetos, bases de datos relacionales, servicios web y más.
 LINQ combina la sintaxis del lenguaje con la capacidad de escribir consultas de forma declarativa, lo que significa que puedes expresar lo que deseas obtener en lugar de especificar cómo obtenerlo. Esto facilita la escritura de consultas complejas y reduce la cantidad de código necesario para realizar operaciones de filtrado, ordenación, agrupación y proyección de datos.
@@ -55,6 +64,8 @@ Aggregate: se utiliza para realizar operaciones de agregación, como sumas, prom
 
 
 Existen LINQ para base de datos NoSQL.
+
+
 existen consultas LINQ para bases de datos NoSQL como MongoDB. Entity Framework Core, una versión ligera y multiplataforma de Entity Framework, admite bases de datos NoSQL, incluida MongoDB.
 Para utilizar LINQ con MongoDB, primero debes agregar los paquetes necesarios a tu proyecto de C# mediante NuGet. Los paquetes requeridos son MongoDB.Driver y MongoDB.Driver.Linq.
 Una vez que hayas instalado los paquetes, puedes usar la sintaxis de consultas LINQ para realizar consultas y manipulaciones de datos en MongoDB. Algunos ejemplos de operadores LINQ que se pueden utilizar con MongoDB incluyen:
@@ -74,8 +85,14 @@ Me aparecen errores de Versiones, las cuales Blueshift llega hasta la 2.2.2 y EF
 
 
 MongoFramework.
+  
+  
 Git Oficial.
+  
+  
 https://github.com/TurnerSoftware/MongoFramework
+  
+  
 MongoFramework es una biblioteca de mapeo de objetos (Object-Document Mapper o ODM) para MongoDB en el entorno de desarrollo de .NET. Proporciona una capa de abstracción sobre la biblioteca oficial de MongoDB para facilitar la interacción y el mapeo de objetos entre una aplicación .NET y una base de datos MongoDB.
 MongoFramework permite a los desarrolladores utilizar modelos de objetos y realizar operaciones CRUD (crear, leer, actualizar y eliminar) en MongoDB sin tener que preocuparse por los detalles de bajo nivel de la biblioteca de MongoDB. Proporciona una sintaxis simple y orientada a objetos para trabajar con documentos y colecciones en MongoDB.
 Algunas características y funcionalidades clave de MongoFramework incluyen:
