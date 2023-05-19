@@ -1,6 +1,8 @@
 # PruebaCosmosDb
 
 TP WEB 3
+
+
 Si API de Azure CosmosDB y Azure Cosmos DB for MongoDB(vCore) son lo mismo?
 Si son lo mismo cuando se crea un Cluster de Azure Cosmos DB for MongoDB se genera una API de Azure CosmosDB para MongoDB
 Como funciona?
