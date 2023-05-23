@@ -4,7 +4,7 @@ using PruebaMongo.Models;
 
 namespace PruebaMongo.Repository;
 
-public class PropertyRepository : IPropiedadCollection
+public class PropertyRepository : IPropertyRepository
 {
     public AppContext context;
 
@@ -13,12 +13,14 @@ public class PropertyRepository : IPropiedadCollection
         context = new(ConnectionFactory.GetConnection());
     }
 
-    public List<Propiedades> GetAllPropiedades()
+    public List<Property> GetAllPropiedades()
     {
-        return context.Propiedades.AsQueryable().ToList(); // expresion en LINQ
+        var properties = context.Propiedades.AsQueryable().ToList();
+
+        return properties; // expresion en LINQ
     }
 
-    public Propiedades GetPropiedadByID(string id)
+    public Property GetPropiedadByID(string id)
     {
         var propiedad = context.Propiedades.FirstOrDefault(Prop => Prop.Id == new ObjectId(id));
         context.SaveChanges();
@@ -26,7 +28,7 @@ public class PropertyRepository : IPropiedadCollection
         return propiedad;
     }
 
-    public void InsertPropiedad(Propiedades propiedad)
+    public void InsertPropiedad(Property propiedad)
     {
         context.Propiedades.Add(propiedad);
         context.SaveChanges();

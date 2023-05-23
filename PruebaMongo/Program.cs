@@ -1,7 +1,6 @@
 using PruebaMongo.Repository;
-using MongoDB.Driver;
-using Microsoft.EntityFrameworkCore;
-using MongoDB.Driver.Core.Configuration;
+using PruebaMongo.Services;
+using PruebaMongo.Services.Properties;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<IProductCollection, ProductRepository>();
-builder.Services.AddSingleton<IPropiedadCollection, PropertyRepository>();
 
-var configuration = builder.Configuration;
-
+builder.Services.AddSingleton<IPropertyRepository, PropertyRepository>();
+builder.Services.AddSingleton<IPropertyService, PropertyService>();
 
 
 var app = builder.Build();
@@ -35,6 +33,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Propiedad}/{action=Listar}/{id?}");
+    pattern: "{controller=Property}/{action=Listar}/{id?}");
 
 app.Run();

@@ -40,12 +40,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNb2RpZmljYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/u633558/Desktop/PruebaCosmosDb/PruebaMongo/Views/Propiedad/Agregar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGllZGFkXEFncmVnYXIuY3NodG1s
+[C:/Users/u633558/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/Agregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQWdyZWdhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/u633558/Desktop/PruebaCosmosDb/PruebaMongo/Views/Propiedad/Listar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGllZGFkXExpc3Rhci5jc2h0bWw=
+[C:/Users/u633558/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/u633558/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/Error.cshtml]

@@ -13,7 +13,7 @@ public class AppContext : MongoDbContext
 
     public MongoDbSet<Products> Products { get; set; } //Buscar la Collection con este nombre si no existe la crea
 
-    public MongoDbSet<Propiedades> Propiedades { get; set; } // Busca la collection con este nombre si no existe la crea
+    public MongoDbSet<Property> Propiedades { get; set; } // Busca la collection con este nombre si no existe la crea
 
 
 }
