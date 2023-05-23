@@ -44,13 +44,29 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
             "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.1, )"
+            },
+            "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.19.1, )"
             },
             "MongoDB.Driver.Linq.AsyncEnumerable": {
               "target": "Package",
               "version": "[2.15.4, )"
+            },
+            "MongoFramework": {
+              "target": "Package",
+              "version": "[0.28.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -1,0 +1,34 @@
+﻿@model List<Propiedades>
+
+<h2>Lista de Propiedades</h2>
+
+@if (Model.Count > 0)
+{
+   
+    <div class="card-group">
+        @foreach (var propiedad in Model)
+    {
+        <div class="card">
+                <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">@propiedad.Titulo</h5>
+        <p class="card-text">@propiedad.Descripcion</p>
+        <p class="card-text">Ubicacion: @propiedad.Ubicacion</p>
+        <p class="card-text">Metros Cuadrados: @propiedad.MetrosCuadrados</p>
+        <p class="card-text">Baños: @propiedad.Banos</p>
+        </div>
+        <div class="card-footer">
+      <small class="text-muted">USD$ @propiedad.Precio</small>
+       <small class="text-muted">Garage: @(propiedad.Garaje ? "Sí" : "No")</small>
+      <small class="text-muted">Aminedades: @(propiedad.Amenidades != null ? string.Join(", ", propiedad.Amenidades) : "")</small>
+    </div>
+    </div>
+        } 
+    </div>
+
+
+}
+else
+{
+    <p>No se encontraron propiedades.</p>
+}

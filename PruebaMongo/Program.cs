@@ -1,13 +1,21 @@
 using PruebaMongo.Repository;
+using MongoDB.Driver;
+using Microsoft.EntityFrameworkCore;
+using MongoDB.Driver.Core.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<IProductCollection, ProductCollection>();
-builder.Services.AddSingleton<IUsuarioCollection, UsuarioCollection>();
-var app = builder.Build();
 
+builder.Services.AddSingleton<IProductCollection, ProductCollection>();
+builder.Services.AddSingleton<IPropiedadCollection, PropiedadCollection>();
+
+var configuration = builder.Configuration;
+
+
+
+var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
@@ -27,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Product}/{action=Listar}/{id?}");
+    pattern: "{controller=Propiedad}/{action=Listar}/{id?}");
 
 app.Run();

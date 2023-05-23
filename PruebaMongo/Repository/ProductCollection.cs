@@ -1,61 +1,86 @@
-﻿using MongoDB.Bson;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using MongoFramework;
 using PruebaMongo.Models;
+using System.Linq;
+using System.Xml;
 
 namespace PruebaMongo.Repository
 {
     public class ProductCollection : IProductCollection
     {
-        //readonly MongoDbRepository _dbContext;
-        internal MongoDbRepository _repository = new MongoDbRepository(); //para q solamente  pueda ver esta clase y las del paquete
-        private IMongoCollection<Product> Collection;
+        private  static IMongoDbConnection ConectionStringMongo()
+        {
+            //var connection1 = MongoDbConnection.FromUrl(new MongoUrl("mongodb://tpweb3:zrBcQovBkgZmRlyGKnB9nSBV4iDbnQNVR1QqwsaHdjDBygm7Kie8F8Rri5avL1aZ6G1sF9xX9IkHACDbi5d7eA==@tpweb3.mongo.cosmos.azure.com:10255/Inventory?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@tpweb3@"));
+            var connection = MongoDbConnection.FromConnectionString("mongodb://127.0.0.1:27017/Inmobiliaria");
+            //var connection2 = MongoDbConnection.FromConnectionString("mongodb://tpweb3:zrBcQovBkgZmRlyGKnB9nSBV4iDbnQNVR1QqwsaHdjDBygm7Kie8F8Rri5avL1aZ6G1sF9xX9IkHACDbi5d7eA==@tpweb3.mongo.cosmos.azure.com:10255/Inventory?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@tpweb3@");
+            return connection;
+        }
+
+        public MongoDbRepository _repository = new MongoDbRepository(ConectionStringMongo()); //para q solamente  pueda ver esta clase y las del paquete
+        
+        private IMongoCollection<Products> Collection;
+        //internal MongoDbRepository _repository = new MongoDbRepository(); //para q solamente  pueda ver esta clase y las del paquete
+        
         public ProductCollection()
         {
-            //_dbContext = dbContext;
-            Collection = _repository.db.GetCollection<Product>("Products");
-
-            // _repository = new MongoDBRepository();
+            
+            //Collection = _repository.db.GetCollection<Product>("Products");
         }
+
+
+
 
         public void DeleteProduct(string id)
         {
-            var filtrer = Builders<Product>.Filter.Eq(s => s.Id, new ObjectId(id));
-            Collection.DeleteOne(filtrer);
+            var producto = _repository.Products.FirstOrDefault(Product => Product.Id == new ObjectId(id));
+         
+                _repository.Products.Remove(producto);
+                _repository.SaveChanges();
+            
+
+           
         }
 
-        public List<Product> GetAllProducts()
+        public List<Products> GetAllProducts()
         {
-            return Collection.AsQueryable().ToList(); // expresion en LINQ
-            //return Collection.Find(new BsonDocument()).ToList(); //new BsonDocument() manda un documento vacio
+            return _repository.Products.AsQueryable().ToList(); // expresion en LINQ
+        
         }
 
-        public Product GetProductByID(string id)
+        public Products GetProductByID(string id)
         {
-            var query = Collection.AsQueryable().FirstOrDefault(document => document.Id == new ObjectId(id));
-            if(query != null)
+            var producto = _repository.Products.FirstOrDefault(Product => Product.Id == new ObjectId(id));
+            _repository.SaveChanges();
+           
+            return producto;
+          
+        }
+
+        public void InsertProduct(Products product)
+        {
+            _repository.Products.Add(product);
+            _repository.SaveChanges();
+           
+        }
+
+        public void UpdateProduct(Products product)
+        {
+            var ExistProducto = _repository.Products.FirstOrDefault(p => p.Id == product.Id);
+            if(product != null)
             {
-                return query;
+                ExistProducto.Name = product.Name;
+                ExistProducto.Stock = product.Stock;
+                ExistProducto.Category = product.Category;
+                _repository.SaveChanges();
+
             }
-            else
-            {
-                return null;
-            }
-          // return Collection.AsQueryable().Where(document => document.Id == new ObjectId(id)).Select(document => document.Product);
-            //return Collection.Find(new BsonDocument { { "_id", new ObjectId(id) } }).First();
-        }
-
-        public void InsertProduct(Product product)
-        {
-
-            Collection.InsertOne(product);
-        }
-
-        public void UpdateProduct(Product product)
-        {
-
-            var filtrer = Builders<Product>.Filter.Eq(s => s.Id, product.Id);
-            Collection.ReplaceOne(filtrer, product);
+          
+          
+            
         }
 
     }

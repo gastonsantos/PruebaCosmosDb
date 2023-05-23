@@ -1,0 +1,89 @@
+﻿@model Propiedades
+
+<!-- Otros elementos HTML -->
+
+<form method="post" action="/Propiedad/Agregar">
+    <div>
+        <label>Título:</label>
+        <input type="text" name="Titulo" />
+    </div>
+    <div>
+        <label>Descripción:</label>
+        <textarea name="Descripcion"></textarea>
+    </div>
+    <div>
+        <label>Ubicación:</label>
+        <input type="text" name="Ubicacion" />
+    </div>
+    <div>
+        <label>Precio:</label>
+        <input type="number" name="Precio" step="0.01" />
+    </div>
+    <div>
+        <label>Metros Cuadrados:</label>
+        <input type="number" name="MetrosCuadrados" />
+    </div>
+    <div>
+        <label>Habitaciones:</label>
+        <input type="number" name="Habitaciones" />
+    </div>
+    <div>
+        <label>Baños:</label>
+        <input type="number" name="Banos" />
+    </div>
+    <div>
+        <label>Imagen:</label>
+        <input type="text" name="Imagen" />
+    </div>
+    <div>
+        <label>Garaje:</label>
+        <input type="checkbox" name="Garaje" />
+    </div>
+    <div>
+        <label>Amenidades:</label>
+        <input type="text" id="amenidadesInput" />
+        <button type="button" onclick="agregarAmenidad()">Agregar</button>
+        <ul id="amenidadesList"></ul>
+        <input type="hidden" name="Amenidades" id="amenidadesHidden" value="" />
+    </div>
+   
+    <button type="submit">Guardar</button>
+</form>
+
+<script>
+    var amenidadesArray = [];
+
+    function agregarAmenidad() {
+        var amenidad = document.getElementById("amenidadesInput").value;
+        amenidadesArray.push(amenidad);
+        actualizarAmenidades();
+        limpiarCampoAmenidades();
+    }
+    function eliminarAmenidad(index) {
+        amenidadesArray.splice(index, 1);
+        actualizarAmenidades();
+    }
+
+    function actualizarAmenidades() {
+        var amenidadesList = document.getElementById("amenidadesList");
+        amenidadesList.innerHTML = "";
+        amenidadesArray.forEach(function (amenidad, index) {
+            var li = document.createElement("li");
+            li.textContent = amenidad;
+
+            var eliminarButton = document.createElement("button");
+            eliminarButton.textContent = "Eliminar";
+            eliminarButton.addEventListener("click", function () {
+                eliminarAmenidad(index);
+            });
+
+            li.appendChild(eliminarButton);
+            amenidadesList.appendChild(li);
+        });
+        document.getElementById("amenidadesHidden").value = amenidadesArray.join(",");
+    }
+
+    function limpiarCampoAmenidades() {
+        document.getElementById("amenidadesInput").value = "";
+    }
+</script>
