@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PruebaMongo.Models;
+﻿using PruebaMongo.Models;
 
 namespace PruebaMongo.Repository;
 
@@ -10,8 +9,4 @@ public interface IProductCollection
     public void InsertProduct(Products product);
     public void UpdateProduct(Products product);
     public void DeleteProduct(string id);
-
-     
-    
-
 }
