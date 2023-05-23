@@ -6,10 +6,11 @@ namespace PruebaMongo.Repository;
 
 public class PropertyRepository : IPropertyRepository
 {
-    public AppContext context;
+    private AppContext context;
 
     public PropertyRepository()
     {
+        Console.Write(ConnectionFactory.GetConnection());
         context = new(ConnectionFactory.GetConnection());
     }
 

@@ -8,5 +8,7 @@ public interface IPropertyService
 
     IList<Property> RecommendProperties();
 
+    void Save(Property properties);
+
     void BookDateToVisit(DateTime date);
 }

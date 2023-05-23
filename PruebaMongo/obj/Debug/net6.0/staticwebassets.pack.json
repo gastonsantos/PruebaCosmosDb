@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PruebaMongo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
+      "PackagePath": "staticwebassets\\Assets\\default-house-image.jpg"
+    },
+    {
       "Id": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

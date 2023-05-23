@@ -12,6 +12,12 @@ public class PropertyService: IPropertyService
         this._propertyRepository = propertyRepository;
     }
 
+
+    public void Save(Property property)
+    {
+        this._propertyRepository.InsertPropiedad(property);
+    }
+
     public void BookDateToVisit(DateTime date)
     {
         throw new NotImplementedException();

@@ -26,16 +26,16 @@ public class PropertyController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(Property propiedades)
+    public IActionResult Agregar(Property property)
     {
 
-        List<string> amenidadesList = propiedades.Amenidades.ToList();
-
-      
-        propiedades.Amenidades = amenidadesList;
+        List<string> amenidadesList = property.Amenidades.ToList();
 
 
-    //    _propertyService.InsertPropiedad(propiedades);
-            return Redirect("/Propiedad/Listar");
+        property.Amenidades = amenidadesList;
+
+
+        _propertyService.Save(property);
+        return Redirect("/Property/Listar");
     }
 }
