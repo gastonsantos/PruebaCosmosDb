@@ -8,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddSingleton<IProductCollection, ProductCollection>();
-builder.Services.AddSingleton<IPropiedadCollection, PropiedadCollection>();
+builder.Services.AddSingleton<IProductCollection, ProductRepository>();
+builder.Services.AddSingleton<IPropiedadCollection, PropertyRepository>();
 
 var configuration = builder.Configuration;
 
