@@ -1,14 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "Hash": "ejOGscZcpEp2AXYRnYgjP339HH5VC3gGiOSgdrOZIw4=",
-=======
-  "Hash": "McA16vII0KjULYK7CghY2gNv0Uuve3lqClZwxKhF9jc=",
->>>>>>> 72b2e25b166aa31801d3e4e1fe650becfd7700b6
-=======
-  "Hash": "Z/Oh9aYCu/ljV7zMqvHLFIyRtcmYz3q8E12U41MVCQg=",
->>>>>>> gaston
+  "Hash": "0KRyDJ5NgKSL4IxiuyWxaqp5fYCKm4v30ZbZMaXxgHg=",
   "Source": "PruebaMongo",
   "BasePath": "_content/PruebaMongo",
   "Mode": "Default",
@@ -59,14 +51,7 @@
       "OriginalItemSpec": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PruebaMongo.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",
-=======
-      "Identity": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
-=======
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
->>>>>>> gaston
       "SourceId": "PruebaMongo",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
@@ -105,24 +90,6 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
       "BasePath": "_content/PruebaMongo",
-      "RelativePath": "Assets/default-house-image.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Assets\\default-house-image.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\css\\site.css",
->>>>>>> 72b2e25b166aa31801d3e4e1fe650becfd7700b6
-      "SourceId": "PruebaMongo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
-      "BasePath": "_content/PruebaMongo",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -150,6 +117,125 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\ambientes.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/ambientes.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\ambientes.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\antiguedad.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/antiguedad.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\antiguedad.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\area.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/area.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\area.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\baños.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/baños.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\baños.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\cocheras.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/cocheras.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\cocheras.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\disposicion.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/disposicion.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\disposicion.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\expensas.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "images/icons/expensas.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\expensas.png"
     },
     {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\js\\site.js",
