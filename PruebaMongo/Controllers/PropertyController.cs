@@ -35,7 +35,7 @@ public class PropertyController : Controller
         propiedades.Amenidades = amenidadesList;
 
 
-    //    _propertyService.InsertPropiedad(propiedades);
-            return Redirect("/Propiedad/Listar");
+       this._propertyService.InsertProperty(propiedades);
+       return Redirect("/Property/Listar");
     }
 }

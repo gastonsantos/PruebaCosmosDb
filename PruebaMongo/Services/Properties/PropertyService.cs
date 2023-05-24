@@ -26,4 +26,14 @@ public class PropertyService: IPropertyService
     {
         throw new NotImplementedException();
     }
+
+    public void InsertProperty(Property property)
+    {
+        this._propertyRepository.InsertPropiedad(property);
+    }
+
+    Property IPropertyService.InsertProperty(Property property)
+    {
+        throw new NotImplementedException();
+    }
 }
