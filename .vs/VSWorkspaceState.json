@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PruebaMongo",
-    "\\PruebaMongo\\Controllers",
     "\\PruebaMongo\\Repository",
     "\\PruebaMongo\\Views",
     "\\PruebaMongo\\Views\\Shared"
   ],
-  "SelectedNode": "\\PruebaMongo\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\PruebaMongo.sln",
   "PreviewInSolutionExplorer": false
 }
