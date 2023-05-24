@@ -1,15 +1,21 @@
-﻿using PruebaMongo.Models;
-using PruebaMongo.Repository;
+﻿using PruebaMongo.Repository;
+using PruebaMongo.Models;
 
 namespace PruebaMongo.Services.Properties;
 
-public class PropertyService: IPropertyService
+public class PropertyService : IPropertyService
 {
     private readonly IPropertyRepository _propertyRepository;
 
     public PropertyService(IPropertyRepository propertyRepository)
     {
         this._propertyRepository = propertyRepository;
+    }
+
+
+    public void Save(Property property)
+    {
+        this._propertyRepository.InsertPropiedad(property);
     }
 
     public void BookDateToVisit(DateTime date)
@@ -23,16 +29,6 @@ public class PropertyService: IPropertyService
     }
 
     public IList<Property> RecommendProperties()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void InsertProperty(Property property)
-    {
-        this._propertyRepository.InsertPropiedad(property);
-    }
-
-    Property IPropertyService.InsertProperty(Property property)
     {
         throw new NotImplementedException();
     }

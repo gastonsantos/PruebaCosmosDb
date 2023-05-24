@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "ejOGscZcpEp2AXYRnYgjP339HH5VC3gGiOSgdrOZIw4=",
+=======
+  "Hash": "McA16vII0KjULYK7CghY2gNv0Uuve3lqClZwxKhF9jc=",
+>>>>>>> 72b2e25b166aa31801d3e4e1fe650becfd7700b6
   "Source": "PruebaMongo",
   "BasePath": "_content/PruebaMongo",
   "Mode": "Default",
@@ -51,7 +55,28 @@
       "OriginalItemSpec": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PruebaMongo.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",
+=======
+      "Identity": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "Assets/default-house-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\default-house-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\css\\site.css",
+>>>>>>> 72b2e25b166aa31801d3e4e1fe650becfd7700b6
       "SourceId": "PruebaMongo",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",

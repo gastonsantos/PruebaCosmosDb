@@ -5,12 +5,44 @@
       "PackagePath": "staticwebassets\\PruebaMongo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
+      "PackagePath": "staticwebassets\\Assets\\default-house-image.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\ambientes.png",
+      "PackagePath": "staticwebassets\\images\\icons\\ambientes.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\antiguedad.png",
+      "PackagePath": "staticwebassets\\images\\icons\\antiguedad.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\area.png",
+      "PackagePath": "staticwebassets\\images\\icons\\area.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\baños.png",
+      "PackagePath": "staticwebassets\\images\\icons\\baños.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\cocheras.png",
+      "PackagePath": "staticwebassets\\images\\icons\\cocheras.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\disposicion.png",
+      "PackagePath": "staticwebassets\\images\\icons\\disposicion.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\images\\icons\\expensas.png",
+      "PackagePath": "staticwebassets\\images\\icons\\expensas.png"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\js\\site.js",

@@ -24,7 +24,7 @@ public class Property
 
     public List<string> Amenidades { get; set; }
 
-    public string Imagen { get; set; }
+    public string? Imagen { get; set; }
 
     public Agente Agente { get; set; }
 }
