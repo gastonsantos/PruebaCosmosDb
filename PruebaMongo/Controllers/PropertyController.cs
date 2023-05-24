@@ -26,16 +26,27 @@ public class PropertyController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(Property propiedades)
+    public IActionResult Agregar(Property property, IFormFile imagen)
     {
+        string path = Path.Combine("wwwroot/", property.Titulo + ".jpg");
+        // string path = Path.Combine("wwwroot/", imagen.FileName);
 
-        List<string> amenidadesList = propiedades.Amenidades.ToList();
+        var stream = new FileStream(path, FileMode.Create);
+
+        imagen.CopyTo(stream);
+
+        Property propiedades1 = property;
+
+        propiedades1.Imagen = @"\" + property.Titulo + ".jpg";
+
+        List<string> amenidadesList = property.Amenidades.ToList();
 
       
-        propiedades.Amenidades = amenidadesList;
+        property.Amenidades = amenidadesList;
 
 
-    //    _propertyService.InsertPropiedad(propiedades);
-            return Redirect("/Propiedad/Listar");
+        _propertyService.Save(property);
+
+        return Redirect("/Propety/Listar");
     }
 }
