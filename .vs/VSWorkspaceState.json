@@ -3,8 +3,10 @@
     "",
     "\\PruebaMongo",
     "\\PruebaMongo\\Controllers",
-    "\\PruebaMongo\\Repository"
+    "\\PruebaMongo\\Repository",
+    "\\PruebaMongo\\Views",
+    "\\PruebaMongo\\Views\\Shared"
   ],
-  "SelectedNode": "\\PruebaMongo\\Controllers\\PropertyController.cs",
+  "SelectedNode": "\\PruebaMongo\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
