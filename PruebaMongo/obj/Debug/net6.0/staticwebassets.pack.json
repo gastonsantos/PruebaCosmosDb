@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Assets\\default-house-image.jpg"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casota.jpg",
+      "PackagePath": "staticwebassets\\Casota.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
