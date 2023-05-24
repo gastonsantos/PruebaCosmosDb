@@ -1,9 +1,9 @@
-﻿using PruebaMongo.Models;
-using PruebaMongo.Repository;
+﻿using PruebaMongo.Repository;
+using PruebaMongo.Models;
 
 namespace PruebaMongo.Services.Properties;
 
-public class PropertyService: IPropertyService
+public class PropertyService : IPropertyService
 {
     private readonly IPropertyRepository _propertyRepository;
 

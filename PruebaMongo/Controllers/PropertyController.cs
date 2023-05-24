@@ -26,8 +26,18 @@ public class PropertyController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(Property property)
+    public IActionResult Agregar(Property property, IFormFile imagen)
     {
+        string path = Path.Combine("wwwroot/", property.Titulo + ".jpg");
+        // string path = Path.Combine("wwwroot/", imagen.FileName);
+
+        var stream = new FileStream(path, FileMode.Create);
+
+        imagen.CopyTo(stream);
+
+        Property propiedades1 = property;
+
+        propiedades1.Imagen = @"\" + property.Titulo + ".jpg";
 
         List<string> amenidadesList = property.Amenidades.ToList();
 
@@ -37,5 +47,6 @@ public class PropertyController : Controller
 
         _propertyService.Save(property);
         return Redirect("/Property/Listar");
+
     }
 }

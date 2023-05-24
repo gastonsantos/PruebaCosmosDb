@@ -16,9 +16,9 @@ public class PropertyRepository : IPropertyRepository
 
     public List<Property> GetAllPropiedades()
     {
-        var properties = context.Propiedades.AsQueryable().ToList();
+        var properties = context.Propiedades.AsQueryable().ToList();//expresiones LINQ
 
-        return properties; // expresion en LINQ
+        return properties; 
     }
 
     public Property GetPropiedadByID(string id)
