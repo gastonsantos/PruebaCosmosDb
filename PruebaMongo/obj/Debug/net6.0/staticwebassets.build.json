@@ -1,10 +1,14 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "ejOGscZcpEp2AXYRnYgjP339HH5VC3gGiOSgdrOZIw4=",
 =======
   "Hash": "McA16vII0KjULYK7CghY2gNv0Uuve3lqClZwxKhF9jc=",
 >>>>>>> 72b2e25b166aa31801d3e4e1fe650becfd7700b6
+=======
+  "Hash": "Z/Oh9aYCu/ljV7zMqvHLFIyRtcmYz3q8E12U41MVCQg=",
+>>>>>>> gaston
   "Source": "PruebaMongo",
   "BasePath": "_content/PruebaMongo",
   "Mode": "Default",
@@ -56,12 +60,50 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",
 =======
       "Identity": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
+=======
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\default-house-image.jpg",
+>>>>>>> gaston
       "SourceId": "PruebaMongo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "Assets/default-house-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\default-house-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casota.jpg",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "Casota.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Casota.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
       "BasePath": "_content/PruebaMongo",
       "RelativePath": "Assets/default-house-image.jpg",
       "AssetKind": "All",

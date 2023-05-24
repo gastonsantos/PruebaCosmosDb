@@ -11,4 +11,6 @@ public interface IPropertyService
     void Save(Property properties);
 
     void BookDateToVisit(DateTime date);
+
+  
 }

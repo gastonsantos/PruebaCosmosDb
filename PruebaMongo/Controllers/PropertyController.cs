@@ -33,6 +33,7 @@ public class PropertyController : Controller
 
         var stream = new FileStream(path, FileMode.Create);
 
+
         imagen.CopyTo(stream);
 
         Property propiedades1 = property;
@@ -47,6 +48,7 @@ public class PropertyController : Controller
 
         _propertyService.Save(property);
         return Redirect("/Property/Listar");
+
 
     }
 }
