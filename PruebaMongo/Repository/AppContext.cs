@@ -15,5 +15,7 @@ public class AppContext : MongoDbContext
 
     public MongoDbSet<Property> Propiedades { get; set; } // Busca la collection con este nombre si no existe la crea
 
+    public MongoDbSet<Agente> Agentes { get; set; }
+
 
 }

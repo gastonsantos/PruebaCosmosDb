@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets\\Assets\\default-house-image.jpg"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casona.jpg",
+      "PackagePath": "staticwebassets\\Casona.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casota.jpg",
       "PackagePath": "staticwebassets\\Casota.jpg"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Hogar.jpg",
       "PackagePath": "staticwebassets\\Hogar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Home.jpg",
+      "PackagePath": "staticwebassets\\Home.jpg"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\css\\site.css",

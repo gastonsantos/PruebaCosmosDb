@@ -1,4 +1,6 @@
-﻿@model Property
+﻿
+@model Property
+
 
 
 <div class="container-fluid ">
@@ -52,7 +54,25 @@
             <label>Ingrese la Imagen:</label>
             <input name="imagen" type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" placeholder="">
             <small id="fileHelp" class="form-text text-muted">Por favor, seleccione un archivo de imagen.</small>
+
         </div>
+
+            <div class="form-group">
+                <label for="Agente_Id">Agente</label>
+                <select id="agent" name="agent" class="form-control">
+                    <option value="">Seleccione un agente</option>
+                    @foreach (var agent in ViewBag.Agents as SelectList)
+                    {
+                        <option value="@agent.Value">@agent.Text</option>
+                    }
+                </select>
+
+            </div>
+
+            
+                
+         
+            
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
     </div>  
