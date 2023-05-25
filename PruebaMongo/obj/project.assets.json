@@ -1451,7 +1451,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.1": {
+      "MongoDB.Bson/2.19.2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -5582,10 +5582,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MongoDB.Bson/2.19.1": {
-      "sha512": "4FSR3eAbJEYMmvQ1pNFImUpFGtGHT+kEw/Yw/KZjxC9iFMj1XcZC08wMbezgRga2F9tNNFG2vDqh9zt01GinMA==",
+    "MongoDB.Bson/2.19.2": {
+      "sha512": "YpwSLKillPRj+BYEZU0dFgVHdCuj7uGIkLcyEc5a9zwJQYMbZkAc2CRVzobnDY9HMSCtyefXnkrz9CQ6C91KQA==",
       "type": "package",
-      "path": "mongodb.bson/2.19.1",
+      "path": "mongodb.bson/2.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5596,7 +5596,7 @@
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.19.1.nupkg.sha512",
+        "mongodb.bson.2.19.2.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
@@ -10166,6 +10166,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
+      "MongoDB.Bson >= 2.19.2",
       "MongoDB.Driver >= 2.19.1",
       "MongoDB.Driver.Core >= 2.19.1",
       "MongoDB.Driver.Linq.AsyncEnumerable >= 2.15.4",
@@ -10226,6 +10227,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.13, )"
+          },
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "[2.19.2, )"
           },
           "MongoDB.Driver": {
             "target": "Package",

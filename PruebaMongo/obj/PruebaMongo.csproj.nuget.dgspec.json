@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.19.2, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.19.1, )"

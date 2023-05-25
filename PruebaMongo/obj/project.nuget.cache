@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I6Djo0kkC2IfvmChqVcnPaLba9ODX5iTuk0QiWCzCPk5u4Keva55OsR8kTKVEuug0ak+KZMi1Moon0TLvi1B2g==",
+  "dgSpecHash": "U1cFDbyxrQsRkbxqpF1g845JpqpPefIEVkZnnPg/xycDqHIKH01+wHXySKcXb9kF3zJY/vNgMAgNRSE/f0KSug==",
   "success": true,
   "projectFilePath": "C:\\Users\\erika\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
   "expectedPackageFiles": [
@@ -58,7 +58,7 @@
     "C:\\Users\\erika\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\erika\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\erika\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\erika\\.nuget\\packages\\mongodb.bson\\2.19.1\\mongodb.bson.2.19.1.nupkg.sha512",
+    "C:\\Users\\erika\\.nuget\\packages\\mongodb.bson\\2.19.2\\mongodb.bson.2.19.2.nupkg.sha512",
     "C:\\Users\\erika\\.nuget\\packages\\mongodb.driver\\2.19.1\\mongodb.driver.2.19.1.nupkg.sha512",
     "C:\\Users\\erika\\.nuget\\packages\\mongodb.driver.core\\2.19.1\\mongodb.driver.core.2.19.1.nupkg.sha512",
     "C:\\Users\\erika\\.nuget\\packages\\mongodb.driver.linq.asyncenumerable\\2.15.4\\mongodb.driver.linq.asyncenumerable.2.15.4.nupkg.sha512",
