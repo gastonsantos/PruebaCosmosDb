@@ -14,7 +14,12 @@
             <img class="w-100" src="@(Model.Imagen != null ? Model.Imagen : "/Assets/default-house-image.jpg")" />
         </div>
         <div class="col-lg-8 mt-4 mt-lg-0">
-            <h3>Dirección</h3>
+             <h4>Contacto</h4>
+             <p>@Model.Agente.Nombre</p>
+             <p>Tel: @Model.Agente.Telefono</p>
+             <p>Email: @Model.Agente.Email</p>
+
+            <h4>Dirección</h4>
             <p>@Model.Ubicacion</p>
             <h5>USD$@Model.Precio</h5>
 
@@ -51,14 +56,18 @@
 
                 </div>
 
-                <div class="my-2 float-end">
-                    <button class="btn btn-primary">RESERVAR VISITA</button>
-                </div>
+                    <div class="my-2 float-end">                      
+                        <button class="btn btn-primary">RESERVAR VISITA</button>
+                    </div>
             </div>
         </div>
     </div>
 
+    <div class="mt-4">
+        <h4>Descripción</h4>
+        <p>@Model.Descripcion</p>
+    </div>
+
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Listar"  asp-controller="Property">Volver a la lista</a>
 </div>
