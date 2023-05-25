@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xbqwWlN51d9k2UnboiCup386ZbgitSKLVEoO1czShW2Ye7NFiQ0Zln04ITYkevVYAShXwuAF6TSnrVUf0bqVfA==",
+  "dgSpecHash": "ogVeImk1K/KJYrMIizDnin1+Nooz4yqSh3ZBUPd6f+AF9vfRJgVaIjCWFYIYS5A+rTNa34bH+k/B/KNRr/37NQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj",
   "expectedPackageFiles": [
@@ -58,7 +58,7 @@
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.bson\\2.19.1\\mongodb.bson.2.19.1.nupkg.sha512",
+    "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.bson\\2.19.2\\mongodb.bson.2.19.2.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.driver\\2.19.1\\mongodb.driver.2.19.1.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.driver.core\\2.19.1\\mongodb.driver.core.2.19.1.nupkg.sha512",
     "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\mongodb.driver.linq.asyncenumerable\\2.15.4\\mongodb.driver.linq.asyncenumerable.2.15.4.nupkg.sha512",

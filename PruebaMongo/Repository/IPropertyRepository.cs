@@ -1,4 +1,5 @@
-﻿using PruebaMongo.Models;
+﻿using MongoDB.Bson;
+using PruebaMongo.Models;
 
 namespace PruebaMongo.Repository;
 
