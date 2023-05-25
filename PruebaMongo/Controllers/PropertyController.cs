@@ -19,6 +19,13 @@ public class PropertyController : Controller
         return View(this._propertyService.GetAll());
     }
 
+    public IActionResult Detalle(string id)
+    {
+        Property property = _propertyService.getPropertyById(id);
+
+        return View(property);
+    }
+
     [HttpGet]
     public IActionResult Agregar()
     {
