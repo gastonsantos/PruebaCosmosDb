@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\Assets\\default-house-image.jpg"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa Embrujada.jpg",
+      "PackagePath": "staticwebassets\\Casa Embrujada.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Embrujada.jpg",
+      "PackagePath": "staticwebassets\\Casa_Embrujada.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casona.jpg",
       "PackagePath": "staticwebassets\\Casona.jpg"
     },

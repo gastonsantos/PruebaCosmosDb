@@ -1,15 +1,22 @@
 ﻿using MongoDB.Bson;
+using MongoFramework;
+using MongoFramework.Attributes;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PruebaMongo.Models;
 
+[Table("MyCustomPoperty")]
 public class Property
 {
+    
     public ObjectId Id { get; set; }
 
+    [Column("MappedTitulo")]
     public string Titulo { get; set; }
 
     public string Descripcion { get; set; }
 
+    [Index("Ubicacion", IndexSortOrder.Ascending)]
     public string Ubicacion { get; set; }
 
     public decimal Precio { get; set; }
