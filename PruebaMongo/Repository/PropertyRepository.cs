@@ -6,32 +6,31 @@ namespace PruebaMongo.Repository;
 
 public class PropertyRepository : IPropertyRepository
 {
-    private AppContext context;
+    private readonly DbContext _context;
 
     public PropertyRepository()
     {
-        Console.Write(ConnectionFactory.GetConnection());
-        context = new(ConnectionFactory.GetConnection());
+        _context = new(ConnectionFactory.GetConnection());
     }
 
     public List<Property> GetAllPropiedades()
     {
-        var properties = context.Propiedades.AsQueryable().ToList();//expresiones LINQ
+        var properties = _context.Propiedades.AsQueryable().ToList();//expresiones LINQ
 
         return properties; 
     }
 
     public Property GetPropiedadByID(string id)
     {
-        var propiedad = context.Propiedades.FirstOrDefault(Prop => Prop.Id == new ObjectId(id));
-        context.SaveChanges();
+        var propiedad = _context.Propiedades.FirstOrDefault(Prop => Prop.Id == new ObjectId(id));
+        _context.SaveChanges();
 
         return propiedad;
     }
 
     public void InsertPropiedad(Property propiedad)
     {
-        context.Propiedades.Add(propiedad);
-        context.SaveChanges();
+        _context.Propiedades.Add(propiedad);
+        _context.SaveChanges();
     }
 }

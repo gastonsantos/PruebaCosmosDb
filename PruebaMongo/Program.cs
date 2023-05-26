@@ -1,15 +1,17 @@
+using MongoFramework;
 using PruebaMongo.Repository;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Properties;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Configura Repositories and Services.
 builder.Services.AddSingleton<IPropertyRepository, PropertyRepository>();
 builder.Services.AddSingleton<IPropertyService, PropertyService>();
-
 
 var app = builder.Build();
 
@@ -24,9 +26,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
