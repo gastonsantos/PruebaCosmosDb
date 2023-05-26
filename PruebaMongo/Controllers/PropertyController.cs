@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Recommendations;
 using MongoDB.Bson;
 using PruebaMongo.Models;
 using PruebaMongo.Repository;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
-
-
+using PruebaMongo.Services.Users;
 
 namespace PruebaMongo.Controllers;
 
@@ -14,15 +14,13 @@ public class PropertyController : Controller
 {
     readonly IPropertyService _propertyService;
     readonly IAgentService _agentService;
+    readonly IUserService _userService;
 
-    public PropertyController(IPropertyService propertyService, IAgentService agentService)
+    public PropertyController(IPropertyService propertyService, IAgentService agentService, IUserService userService)
     {
         this._propertyService = propertyService;
         this._agentService = agentService;
     }
-
-    
-
 
     public IActionResult Listar()
     {
@@ -39,12 +37,19 @@ public class PropertyController : Controller
     [HttpGet]
     public IActionResult Agregar()
     {
-      
-        
         var agents = this._agentService.GetAllAgents();
         ViewBag.Agents = new SelectList(agents, "Id", "Nombre");
        // ViewBag.Agents = new SelectList(agents);
         return View();
+    }
+
+
+    public IActionResult GetRecommendedProperties()
+    {
+        User user = this._userService.GetUserById("647112daa470860fb213457c");
+        IList<Property> recommendedPropertiesForUser = this._propertyService.RecommendProperties(user);
+
+        return View(recommendedPropertiesForUser);
     }
 
     [HttpPost]
@@ -94,7 +99,5 @@ public class PropertyController : Controller
 
         _propertyService.Save(property);
         return Redirect("/Property/Listar");
-
-
     }
 }

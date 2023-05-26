@@ -16,15 +16,10 @@ public class PropertyService : IPropertyService
         this._propertyRepository.InsertPropiedad(property);
     }
 
-    public Property getPropertyById(string id) {
-
-       return this._propertyRepository.GetPropiedadByID(id);
-    }
- 
-
-    public void BookDateToVisit(DateTime date)
+    public Property getPropertyById(string id)
     {
-        throw new NotImplementedException();
+
+        return this._propertyRepository.GetPropiedadByID(id);
     }
 
     public IList<Property> GetAll()
@@ -32,8 +27,13 @@ public class PropertyService : IPropertyService
         return this._propertyRepository.GetAllPropiedades();
     }
 
-    public IList<Property> RecommendProperties()
+    public IList<Property> RecommendProperties(User user)
     {
-        throw new NotImplementedException();
+        var properties = this.GetAll();
+        var nonSelectableProperties = user.FavouritesProperties.Concat(user.ReservedProperties);
+
+        return properties.Except(nonSelectableProperties)
+            .Take(5)
+            .ToList();
     }
 }

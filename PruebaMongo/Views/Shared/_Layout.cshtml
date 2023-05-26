@@ -18,12 +18,12 @@
                 <div class="d-flex flex-row flex-lg-row justify-content-end align-items-end gap-2">
                     
                     <div class="d-flex flex-row">
-                    <a href="" class="nav-link  fz-18 fw-400 text-center popins">
+                    <a href="" class="nav-link text-dark ">
                             <img src="/Assets/mail.png" alt="email icono" class="px-2" width="40px">hola@hshTucasa.net
                         </a>
                     </div>
                     <div class="d-flex flex-row pt-2 pt-lg-0 mx-0 mx-lg-4">
-                    <a href="tel:+864567888" class="nav-link text-uppercase fz-18 fw-400 text-center popins"><img src="/Assets/phone.png" alt="telefono icono" class="px-2" width="35px">+78689076 </a>
+                    <a href="tel:+864567888" class="nav-link text-dark "><img src="/Assets/phone.png" alt="telefono icono" class="px-2" width="35px">+78689076 </a>
                     </div>
                     <div class="pt-2 pt-lg-0 d-flex gap-2">
                         <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/facebook-gray.png" alt="facebook hsh" width="26px"></a>
@@ -35,8 +35,9 @@
                 </div>
         </section>
 
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg" style="background-color: #FFE4C4;">
+            
+            <div class="container" style="background-color: #FFE4C4;">
                 <a class="navbar-brand" asp-area="" asp-controller="Property" asp-action="listar">TuCasa</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -59,13 +60,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
                         <li class="nav-item text-dark-gray">
-                            <a class="nav-link text-uppercase fz-18 fw-400 text-center popins" href="">Propiedades</a>
+                            <a class="nav-link text-dark" href="">Propiedades</a>
                         </li>
                         <li class="nav-item text-dark-gray">
-                            <a class="nav-link text-uppercase fz-18 fw-400 text-center popins" href="#nosotros">Nosotros</a>
+                            <a class="nav-link text-dark" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item text-dark-gray">
-                            <a class="nav-link text-uppercase fz-18 fw-400 text-center popins" href="">Contacto</a>
+                            <a class="nav-link text-dark" href="">Contacto</a>
                         </li>
                         
                     </ul>
@@ -76,7 +77,7 @@
         </nav>
         
     </header>
-    <div class="container-fluid" style="background-color: #c2c2c2;">
+    <div class="container-fluid" >
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

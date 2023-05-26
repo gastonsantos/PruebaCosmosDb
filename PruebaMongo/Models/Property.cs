@@ -34,4 +34,21 @@ public class Property
     public string? Imagen { get; set; }
 
     public Agente Agente { get; set; }
+
+
+    public override bool Equals(object obj)
+    {
+        if (ReferenceEquals(null, obj)) return false;
+        if (ReferenceEquals(this, obj)) return true;
+        if (obj.GetType() != this.GetType()) return false;
+
+        Property other = (Property)obj;
+
+        return Id.Equals(other.Id);
+    }
+
+    public override int GetHashCode()
+    {
+        return Id.GetHashCode();
+    }
 }
