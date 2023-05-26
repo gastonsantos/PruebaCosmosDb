@@ -16,7 +16,10 @@ public class PropertyService : IPropertyService
         this._propertyRepository.InsertPropiedad(property);
     }
 
+    public Property getPropertyById(string id) {
 
+       return this._propertyRepository.GetPropiedadByID(id);
+    }
  
 
     public void BookDateToVisit(DateTime date)

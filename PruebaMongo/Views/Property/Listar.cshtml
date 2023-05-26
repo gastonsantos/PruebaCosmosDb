@@ -4,30 +4,31 @@
 
 
 
-<h1 class="mb-4">Listado de Propiedades</h1>
+<h1 class="mb-4">Propiedades</h1>
 @if (Model.Count > 0)
 {
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
         @foreach (var propiedad in Model)
         {
-            <div class="col">
-                <div class="card">
-                    <img src=@(propiedad.Imagen != null ? propiedad.Imagen : "/Assets/default-house-image.jpg") width="250" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">@propiedad.Titulo</h5>
-                        <p class="card-text">@propiedad.Descripcion</p>
-                        <p class="card-text">Ubicacion: @propiedad.Ubicacion</p>
-                        <p class="card-text">Metros Cuadrados: @propiedad.MetrosCuadrados</p>
-                        <p class="card-text">Baños: @propiedad.Banos</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">USD$ @propiedad.Precio</small>
-                        <small class="text-muted">Garage: @(propiedad.Garaje ? "Sí" : "No")</small>
-                        <small class="text-muted">Aminedades: @(propiedad.Amenidades != null ? string.Join(", ", propiedad.Amenidades) : "")</small>
+            <a href="/Property/Detalle/@propiedad.Id" class="text-decoration-none text-black">
+                <div class="col">
+                    <div class="card">
+                        <img src=@(propiedad.Imagen != null ? propiedad.Imagen : "/Assets/default-house-image.jpg") height="250" width="250" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@propiedad.Titulo</h5>
+                           
+                            <p class="card-text">Ubicacion: @propiedad.Ubicacion.Provincia, @propiedad.Ubicacion.Localidad</p>
+                            <p class="card-text">Metros Cuadrados: @propiedad.MetrosCuadrados</p>
+                            <p class="card-text">Baños: @propiedad.Banos</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">USD$ @propiedad.Precio</small>
+                           
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         }
     </div>
 
@@ -37,3 +38,5 @@ else
 {
     <p>No se encontraron propiedades.</p>
 }
+ 
+<partial name="_vpNosotrosView"></partial>

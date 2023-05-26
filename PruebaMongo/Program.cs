@@ -1,6 +1,7 @@
 using MongoFramework;
 using PruebaMongo.Repository;
 using PruebaMongo.Services;
+using PruebaMongo.Services.Agents;
 using PruebaMongo.Services.Properties;
 using System.Configuration;
 
@@ -10,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Configura Repositories and Services.
+builder.Services.AddSingleton<IAgentRepository, AgentRepository>();
+builder.Services.AddSingleton<IAgentService, AgentService>();
 builder.Services.AddSingleton<IPropertyRepository, PropertyRepository>();
 builder.Services.AddSingleton<IPropertyService, PropertyService>();
 

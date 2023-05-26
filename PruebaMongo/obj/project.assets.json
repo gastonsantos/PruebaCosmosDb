@@ -1451,7 +1451,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.1": {
+      "MongoDB.Bson/2.19.2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -5582,10 +5582,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MongoDB.Bson/2.19.1": {
-      "sha512": "4FSR3eAbJEYMmvQ1pNFImUpFGtGHT+kEw/Yw/KZjxC9iFMj1XcZC08wMbezgRga2F9tNNFG2vDqh9zt01GinMA==",
+    "MongoDB.Bson/2.19.2": {
+      "sha512": "YpwSLKillPRj+BYEZU0dFgVHdCuj7uGIkLcyEc5a9zwJQYMbZkAc2CRVzobnDY9HMSCtyefXnkrz9CQ6C91KQA==",
       "type": "package",
-      "path": "mongodb.bson/2.19.1",
+      "path": "mongodb.bson/2.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5596,7 +5596,7 @@
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.19.1.nupkg.sha512",
+        "mongodb.bson.2.19.2.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
@@ -10166,6 +10166,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
+      "MongoDB.Bson >= 2.19.2",
       "MongoDB.Driver >= 2.19.1",
       "MongoDB.Driver.Core >= 2.19.1",
       "MongoDB.Driver.Linq.AsyncEnumerable >= 2.15.4",
@@ -10174,24 +10175,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\u633558\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
+      "projectUniqueName": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj",
       "projectName": "PruebaMongo",
-      "projectPath": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
-      "packagesPath": "C:\\Users\\u633558\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\obj\\",
+      "projectPath": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj",
+      "packagesPath": "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\u633558\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Gaston Mica y juan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10199,7 +10195,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10225,6 +10220,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.13, )"
+          },
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "[2.19.2, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
@@ -10266,7 +10265,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

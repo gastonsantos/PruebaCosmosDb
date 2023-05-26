@@ -1,0 +1,75 @@
+﻿@model PruebaMongo.Models.Property
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Detalle</h1>
+
+<div>
+    <h4>@Model.Titulo</h4>
+    <hr />
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="w-100" src="@(Model.Imagen != null ? Model.Imagen : "/Assets/default-house-image.jpg")" />
+        </div>
+        <div class="col-lg-8 mt-4 mt-lg-0">
+             <h4>Contacto</h4>
+             <p>@Model.Agente.Nombre</p>
+             <p>Tel: @Model.Agente.Telefono</p>
+             <p>Email: @Model.Agente.Email</p>
+
+            <h4>Dirección</h4>
+            <p>@Model.Ubicacion.Provincia, @Model.Ubicacion.Localidad</p>
+            <p>@Model.Ubicacion.Calle, @Model.Ubicacion.Numero, CP: @Model.Ubicacion.CodigoPostal</p>
+            <p>Piso: @Model.Ubicacion.Piso,Departamento: @Model.Ubicacion.Departamento</p>
+            <h5>USD$@Model.Precio</h5>
+
+                <div class="row flex-wrap">
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center">
+                            <img src="/images/icons/area.png" class="w-50"/>
+                                <h5>Superficie</h5>
+                                <p>@Model.MetrosCuadrados mts.</p>
+                        </div>
+                     </div>
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center">
+                            <img src="/images/icons/ambientes.png" class="w-50" />
+                                <h5>Ambientes</h5>
+                                <p>@Model.Habitaciones</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center">
+                            <img src="/images/icons/baños.png" class="w-50" />
+                                <h5>Baños</h5>
+                                <p>@Model.Banos</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center px-2">
+                            <img src="/images/icons/cocheras.png" class="w-50" />
+                                <h5>Cochera</h5>
+                                <p>@(Model.Garaje ? "1" : "0")</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                    <div class="my-2 float-end">                      
+                        <button class="btn btn-primary">RESERVAR VISITA</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h4>Descripción</h4>
+        <p>@Model.Descripcion</p>
+    </div>
+
+<div>
+    <a asp-action="Listar"  asp-controller="Property">Volver a la lista</a>
+</div>
