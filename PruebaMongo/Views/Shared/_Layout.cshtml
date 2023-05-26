@@ -11,28 +11,72 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+        
+        
+        <section class="bg-light-gray py-2 d-none d-md-block" style="background-color: #c2c2c2;">
+       
+                <div class="d-flex flex-row flex-lg-row justify-content-end align-items-end gap-2">
+                    
+                    <div class="d-flex flex-row">
+                    <a href="" class="nav-link  fz-18 fw-400 text-center popins">
+                            <img src="/Assets/mail.png" alt="email icono" class="px-2" width="40px">hola@hshTucasa.net
+                        </a>
+                    </div>
+                    <div class="d-flex flex-row pt-2 pt-lg-0 mx-0 mx-lg-4">
+                    <a href="tel:+864567888" class="nav-link text-uppercase fz-18 fw-400 text-center popins"><img src="/Assets/phone.png" alt="telefono icono" class="px-2" width="35px">+78689076 </a>
+                    </div>
+                    <div class="pt-2 pt-lg-0 d-flex gap-2">
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/facebook-gray.png" alt="facebook hsh" width="26px"></a>
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/instagram-gray.png" alt="instagram hsh" width="26px"></a>
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/tik-tok-gray.png" alt="instagram hsh" width="26px"></a>
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/youtube-gray.png" alt="youtube hsh" width="30px"></a>
+                    </div>
+           
+                </div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Property" asp-action="listar">TuCasa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Property" asp-action="listar">Recomendadas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Property" asp-action="Agregar">Agregar Propiedades</a>
+                            </li>
+
+                        </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Property" asp-action="listar">Recomendadas</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item text-dark-gray">
+                            <a class="nav-link text-uppercase fz-18 fw-400 text-center popins" href="">Propiedades</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Property" asp-action="Agregar">Agregar Propiedades</a>
+                        <li class="nav-item text-dark-gray">
+                            <a class="nav-link text-uppercase fz-18 fw-400 text-center popins" href="#nosotros">Nosotros</a>
                         </li>
-
+                        <li class="nav-item text-dark-gray">
+                            <a class="nav-link text-uppercase fz-18 fw-400 text-center popins" href="">Contacto</a>
+                        </li>
+                        
                     </ul>
+
                 </div>
+            
             </div>
         </nav>
+        
     </header>
-    <div class="container">
+    <div class="container-fluid" style="background-color: #c2c2c2;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -42,5 +86,77 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+
+    <footer class="bg-more-light-gray" style="background-color: #c2c2c2;">
+     
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                <div class="mb-3">
+                    <h3 class=" fw-700 fz-16 text-dark-gray">Avenida Presidente Peron 75645</h3>
+                    <h4 class=" fw-700 fz-16 text-dark-gray">San Justo | Buenos Aires</h4>
+                </div>
+                <div class="mb-3">
+                    <h3 class=" fw-700 fz-16 text-dark-gray">Teléfono</h3>
+                    <a href="tel:+1166869650" class="text-dark-gray fz-14">+54 9 11 6686-9650</a> / <a href="tel:4567753434" class="text-dark-gray fz-14">11 5420 4573</a>
+                </div>
+                <div class="mb-3">
+                    <h3 class=" fw-700 fz-16 text-dark-gray">Whatsapp (de 11 a 13 hs.)</h3>
+                    <a href="" class="text-dark-gray fz-14">+54 9 11 6686-9650</a> / <a href="" class="text-dark-gray fz-14">+14 4 33 2334-4373</a>
+                </div>
+
+
+                <div class="mb-3">
+                    <h3 class=" fw-700 fz-14 text-dark-gray">Email</h3>
+                    <a href="" class="text-dark-gray fz-14">hola@TuCasa.net</a>
+                </div>
+                <div class="mb-3">
+                    <h3 class=" fw-700 fz-14 text-dark-gray">Agente responsable</h3>
+                    <p class="text-dark-gray fz-14">Roberto Bolaños, NM Nº97565</p>
+                </div>
+                <div class="mb-3">
+                    <a href="#" class="fw-700 fz-14 text-dark-gray">Propiedades |</a>
+                    <a href="#" class="fw-700 fz-14 text-dark-gray">Términos y condiciones</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 pb-3">
+                <h3 class="text-uppercase fw-700 fz-21 text-dark-gray pb-3">Suscríbase para recibir novedades</h3>
+                <div class="mb-3">
+                    <p class="text-center text-gray" style="display: none;" id="gracias-newsletter">Muchas gracias por suscribirte.</p>
+
+                    <form id="newsletter" method="POST">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email" required>
+                        </div>
+                        <div class="col-12 col-lg-10 d-flex justify-content-end mt-3 mb-2">
+                            <div class="g-recaptcha" data-sitekey="6LcTF6EjAAAAAKp_m9OX8CbjygF39SLYLoduxhEO"></div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="spinner-border text-info" id="spinner-newsletter" style="display: none;"></div>
+                            <button type="submit" class="btn btn-primary px-4" id="btn-newsletter">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="fw-700 fz-20 text-dark-gray pb-2">Síganos en las redes</h4>
+                    <div class="d-flex gap-3">
+                        <a href="" target="_blank"><img src="/Assets/facebook-gray.png" alt="facebook hsh" width="30px"></a>
+                        <a href="" target="_blank"><img src="/Assets/instagram-gray.png" alt="instagram hsh" width="31px"></a>
+                        <a href="" target="_blank"><img src="/Assets/youtube-gray.png" alt="youtube hsh" width="30px"></a>
+                        <a href="" target="_blank"><img src="/Assets/tik-tok-gray.png" alt="tiktok hsh" width="30px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15609.01048086312!2d-58.5741430701037!3d-34.670099180896756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x95bcc62cc3ef7083%3A0x8306a51b508c4cde!2sFlorencio%20Varela%201903%2C%20B1754JEC%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.6660898!2d-58.5665243!5e0!3m2!1ses-419!2sar!4v1685112029389!5m2!1ses-419!2sar" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

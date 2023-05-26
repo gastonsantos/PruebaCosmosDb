@@ -9,6 +9,30 @@
       "PackagePath": "staticwebassets\\Assets\\default-house-image.jpg"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\facebook-gray.png",
+      "PackagePath": "staticwebassets\\Assets\\facebook-gray.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\instagram-gray.png",
+      "PackagePath": "staticwebassets\\Assets\\instagram-gray.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\mail.png",
+      "PackagePath": "staticwebassets\\Assets\\mail.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\phone.png",
+      "PackagePath": "staticwebassets\\Assets\\phone.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\tik-tok-gray.png",
+      "PackagePath": "staticwebassets\\Assets\\tik-tok-gray.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\youtube-gray.png",
+      "PackagePath": "staticwebassets\\Assets\\youtube-gray.png"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa Embrujada.jpg",
       "PackagePath": "staticwebassets\\Casa Embrujada.jpg"
     },
@@ -39,6 +63,10 @@
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Home.jpg",
       "PackagePath": "staticwebassets\\Home.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Mansion.jpg",
+      "PackagePath": "staticwebassets\\Mansion.jpg"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\casa.jpg",
