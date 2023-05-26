@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "17fWuw6jklHXWbJ/uae0756J7n3sr4F9I+WOXW7wCik=",
+  "Hash": "6U42VDk6VzCymBZsTRfeNHOJ52+PytmQWNhGgT0pnkw=",
   "Source": "PruebaMongo",
   "BasePath": "_content/PruebaMongo",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Casa Embrujada.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\casa.jpg",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "casa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\casa.jpg"
     },
     {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Embrujada.jpg",
