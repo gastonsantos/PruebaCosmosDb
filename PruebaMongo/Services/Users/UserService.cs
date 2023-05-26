@@ -17,8 +17,20 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
+    public User GetUserById(string id)
+    {
+        var userFound = this._userRepository.GetUserById(id);
+
+        return userFound is not null ? userFound : throw new Exception("User was not found.");
+    }
+
     public void MarkPropertyAsFavourite(Property property)
     {
         throw new NotImplementedException();
+    }
+
+    public void Save (User user)
+    {
+        this._userRepository.Insert(user);
     }
 }

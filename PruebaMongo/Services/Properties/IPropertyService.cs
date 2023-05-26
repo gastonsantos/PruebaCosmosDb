@@ -6,13 +6,9 @@ public interface IPropertyService
 {
     IList<Property> GetAll();
 
-    IList<Property> RecommendProperties();
+    IList<Property> RecommendProperties(User user);
 
     Property getPropertyById(string id);
 
-    void Save(Property properties);
-
-    void BookDateToVisit(DateTime date);
-
-  
+    void Save(Property properties);  
 }

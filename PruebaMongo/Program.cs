@@ -1,9 +1,10 @@
 using MongoFramework;
 using PruebaMongo.Repository;
+using PruebaMongo.Repository.Users;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
 using PruebaMongo.Services.Properties;
-using System.Configuration;
+using PruebaMongo.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddSingleton<IAgentRepository, AgentRepository>();
 builder.Services.AddSingleton<IAgentService, AgentService>();
 builder.Services.AddSingleton<IPropertyRepository, PropertyRepository>();
 builder.Services.AddSingleton<IPropertyService, PropertyService>();
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
+builder.Services.AddSingleton<IUserService, UserService>();
 
 var app = builder.Build();
 

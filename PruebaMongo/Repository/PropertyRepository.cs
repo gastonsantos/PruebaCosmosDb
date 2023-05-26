@@ -6,7 +6,7 @@ namespace PruebaMongo.Repository;
 
 public class PropertyRepository : IPropertyRepository
 {
-    private readonly DbContext _context;
+    private readonly AppContext _context;
 
     public PropertyRepository()
     {

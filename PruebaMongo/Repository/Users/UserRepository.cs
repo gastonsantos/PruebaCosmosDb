@@ -5,7 +5,7 @@ namespace PruebaMongo.Repository.Users;
 
 public class UserRepository : IUserRepository
 {
-    private readonly DbContext _context;
+    private readonly AppContext _context;
 
     public UserRepository()
     {
@@ -20,5 +20,11 @@ public class UserRepository : IUserRepository
     public void UpdateUser(User user)
     {
         this._context.Users.Update(user);
+    }
+
+    public void Insert(User user)
+    {
+        _context.Users.Add(user);
+        _context.SaveChanges();
     }
 }
