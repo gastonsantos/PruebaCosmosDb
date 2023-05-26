@@ -48,7 +48,7 @@ public class PropertyController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(Property property, IFormFile imagen, string agent)
+    public IActionResult Agregar(Property property, IFormFile imagen, string agent, string provincia, string localidad, string calle, int numero, string codigoPostal, string departamento, string piso )
     {
         //codigo Imagen
         Property propiedades1 = property;
@@ -78,13 +78,18 @@ public class PropertyController : Controller
 
         property.Agente= this._agentService.GetAgente(agent);
 
+        Ubicacion ubicacion= new Ubicacion();
         
+        ubicacion.Provincia = provincia;
+        ubicacion.Localidad = localidad;
+        ubicacion.Calle = calle;
+        ubicacion.CodigoPostal = codigoPostal;
+        ubicacion.Numero = numero;
+        ubicacion.Departamento = departamento;
+        ubicacion.Piso = piso;
 
-       // var agente = property.Agente.Id.ToString();
-
-        //Agente agent = this._agentService.GetAgente(agente);
-        
-       // property.Agente = agent;
+        property.Ubicacion= ubicacion;
+     
 
 
         _propertyService.Save(property);

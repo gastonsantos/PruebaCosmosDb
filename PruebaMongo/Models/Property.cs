@@ -16,8 +16,8 @@ public class Property
 
     public string Descripcion { get; set; }
 
-    [Index("Ubicacion", IndexSortOrder.Ascending)]
-    public string Ubicacion { get; set; }
+    
+    public Ubicacion Ubicacion { get; set; }
 
     public decimal Precio { get; set; }
 

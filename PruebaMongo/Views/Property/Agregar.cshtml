@@ -15,10 +15,6 @@
                 <textarea class="form-control" name="Descripcion"></textarea>
              </div>
         <div class="form-group">
-            <label>Ubicación:</label>
-            <input type="text" class="form-control" name="Ubicacion" />
-        </div>
-        <div class="form-group">
             <label>Precio:</label>
             <input type="number" class="form-control" name="Precio" step="0.01" />
         </div>
@@ -50,6 +46,18 @@
               
             <input type="hidden" name="Amenidades" id="amenidadesHidden" value="" />
         </div>
+            <div class="form-group">
+                <label>Ubicación:</label>
+                <input type="text" class="form-control" name="provincia" placeholder="Provincia" />
+                <input type="text" class="form-control" name="localidad" placeholder="Localidad" />
+                <input type="text" class="form-control" name="calle" placeholder="Calle" />
+                <input type="number" class="form-control" name="numero" placeholder="Número" />
+                <input type="text" class="form-control" name="codigoPostal" placeholder="Código Postal" />
+                <input type="text" class="form-control" name="departamento" placeholder="Departamento" />
+                <input type="text" class="form-control" name="piso" placeholder="¨Piso" />
+            </div>
+
+
         <div class="form-group">
             <label>Ingrese la Imagen:</label>
             <input name="imagen" type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" placeholder="">
