@@ -36,7 +36,7 @@
                 <div class="mb-3">
 
 
-                    <form asp-action="MensajeNuevo" asp-controller="Contacto" method="POST">
+                    <form asp-action="MensajeNuevo" asp-controller="Contacto" method="POST" id="newsletter">
                         <div class="mb-3">
                             <input  type="text" class="form-control" id="nombre" name="Nombre" aria-describedby="emailHelp" placeholder="Nombre" required >
                             <span  class="text-danger"></span>
@@ -50,7 +50,7 @@
                             <textarea class="form-control" name="Mensaje" aria-describedby="emailHelp" placeholder="Mensaje" required></textarea>
                             <span  class="text-danger"></span>
                         </div>
-
+                       
 
                         <div class="d-flex justify-content-end">
                             <div class="spinner-border text-info" id="spinner-newsletter" style="display: none;"></div>
@@ -75,3 +75,4 @@
         </div>
     </div>
 </footer>
+
