@@ -20,6 +20,7 @@ public class UserRepository : IUserRepository
     public void UpdateUser(User user)
     {
         this._context.Users.Update(user);
+        _context.SaveChanges();
     }
 
     public void Insert(User user)

@@ -10,7 +10,7 @@ public interface IUserService
 
     void Save (User user);
 
-    void MarkPropertyAsFavourite(Property property);
+    void TogglePropertyFavorite(Property property, string userId);
 
     void BookDateToVisitProperty(DateOnly bookedDate, Property property);
 }

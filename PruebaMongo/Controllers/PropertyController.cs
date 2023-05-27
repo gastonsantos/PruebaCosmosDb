@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.Recommendations;
 using MongoDB.Bson;
+using Newtonsoft.Json;
 using PruebaMongo.Models;
 using PruebaMongo.Repository;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
 using PruebaMongo.Services.Users;
+using PruebaMongo.ViewModels;
 
 namespace PruebaMongo.Controllers;
 
@@ -20,6 +23,7 @@ public class PropertyController : Controller
     {
         this._propertyService = propertyService;
         this._agentService = agentService;
+        this._userService = userService;
     }
 
     public IActionResult Listar()
@@ -29,9 +33,10 @@ public class PropertyController : Controller
 
     public IActionResult Detalle(string id)
     {
-        Property property = _propertyService.getPropertyById(id);
+        var user = this._userService.GetUserById("647112daa470860fb213457c");
+        var property = this._propertyService.getPropertyById(id);
 
-        return View(property);
+        return View(new PropertyDetailViewModel() { User = user, Property = property });
     }
 
     [HttpGet]
