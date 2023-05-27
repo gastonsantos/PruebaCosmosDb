@@ -1,8 +1,10 @@
 using MongoFramework;
 using PruebaMongo.Repository;
+using PruebaMongo.Repository.Messages;
 using PruebaMongo.Repository.Users;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
+using PruebaMongo.Services.Messages;
 using PruebaMongo.Services.Properties;
 using PruebaMongo.Services.Users;
 
@@ -18,7 +20,8 @@ builder.Services.AddSingleton<IPropertyRepository, PropertyRepository>();
 builder.Services.AddSingleton<IPropertyService, PropertyService>();
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IUserService, UserService>();
-
+builder.Services.AddSingleton<IMessageService, MessageService>();
+builder.Services.AddSingleton<IMessageRepository, MessageRepository>();
 var app = builder.Build();
 
 
