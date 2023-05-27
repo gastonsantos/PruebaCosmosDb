@@ -36,7 +36,7 @@
                 <div class="mb-3">
 
 
-                    <form asp-action="MensajeNuevo" asp-controller="Contacto" method="POST" id="newsletter">
+                    <form asp-action="MensajeNuevo" asp-controller="Contacto" method="POST" id="message">
                         <div class="mb-3">
                             <input  type="text" class="form-control" id="nombre" name="Nombre" aria-describedby="emailHelp" placeholder="Nombre" required >
                             <span  class="text-danger"></span>
@@ -50,6 +50,24 @@
                             <textarea class="form-control" name="Mensaje" aria-describedby="emailHelp" placeholder="Mensaje" required></textarea>
                             <span  class="text-danger"></span>
                         </div>
+                        <div class="col-12 col-lg-10 d-flex justify-content-end mt-3">
+                            <div class="g-recaptcha" data-sitekey="6LdIHkMmAAAAAJSBSAgFDA_PpxvsybKv3E_JDH1k"></div>
+                        </div>
+                        @if (TempData["ErrorCaptcha"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                <p>@TempData["ErrorCaptcha"]</p>
+                            </div>
+                        }else
+                        {
+                            <div class="alert alert-success">
+                                <p>Gracias por Contactarte con nosotros</p>
+                            </div>
+                        }
+
+                        @section scripts {
+                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                        }
                        
 
                         <div class="d-flex justify-content-end">

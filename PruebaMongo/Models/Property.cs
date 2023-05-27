@@ -16,7 +16,7 @@ public class Property
 
     public string Descripcion { get; set; }
 
-    
+    public string Operacion { get; set; }
     public Ubicacion Ubicacion { get; set; }
 
     public decimal Precio { get; set; }

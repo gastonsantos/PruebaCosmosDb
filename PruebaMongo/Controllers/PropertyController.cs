@@ -7,6 +7,9 @@ using PruebaMongo.Repository;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
 using PruebaMongo.Services.Users;
+using Microsoft.Extensions.Configuration;
+
+
 
 namespace PruebaMongo.Controllers;
 
@@ -24,6 +27,12 @@ public class PropertyController : Controller
 
     public IActionResult Listar()
     {
+        var states = this._propertyService.getAllState();
+        var location = this._propertyService.getAllLocation();
+
+        ViewBag.states = new SelectList(states,states);
+        ViewBag.location = new SelectList(location, location);
+
         return View(this._propertyService.GetAll());
     }
 
@@ -100,4 +109,27 @@ public class PropertyController : Controller
         _propertyService.Save(property);
         return Redirect("/Property/Listar");
     }
+
+    [HttpGet]
+    public ActionResult BuscarPropiedades(string state, string location, string operation)
+    {
+        // Aquí puedes realizar la lógica de búsqueda de propiedades según los parámetros recibidos
+
+        // Ejemplo de redirección a una acción de resultados de búsqueda
+        return RedirectToAction("Resultados", List);
+    }
+    [HttpGet]
+    public ActionResult Resultados(string state, string location, string idb)
+    {
+        // Aquí puedes realizar la lógica para obtener los resultados de búsqueda basados en los parámetros recibidos
+
+        // Ejemplo de pasaje de los parámetros a la vista de resultados
+        ViewBag.State = state;
+        ViewBag.Location = location;
+        ViewBag.Idb = idb;
+
+        return View();
+    }
+
+
 }

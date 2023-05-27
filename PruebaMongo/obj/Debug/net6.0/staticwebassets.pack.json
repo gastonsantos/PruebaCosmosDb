@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\Assets\\instagram-gray.png"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\lupa.png",
+      "PackagePath": "staticwebassets\\Assets\\lupa.png"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\mail.png",
       "PackagePath": "staticwebassets\\Assets\\mail.png"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa Embrujada.jpg",
       "PackagePath": "staticwebassets\\Casa Embrujada.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\CasaFinDeSemana.jpg",
+      "PackagePath": "staticwebassets\\CasaFinDeSemana.jpg"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Embrujada.jpg",
