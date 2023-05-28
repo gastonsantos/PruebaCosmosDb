@@ -23,7 +23,7 @@ namespace PruebaMongo.Repository
         public Agente GetAgentByID(string id)
         {
             var agent = context.Agentes.FirstOrDefault(ag => ag.Id == new ObjectId(id));
-            context.SaveChanges();
+           // context.SaveChanges();
            
 
             return agent;

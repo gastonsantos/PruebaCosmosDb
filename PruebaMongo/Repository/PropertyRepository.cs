@@ -15,15 +15,16 @@ public class PropertyRepository : IPropertyRepository
 
     public List<Property> GetAllPropiedades()
     {
-        var properties = _context.Propiedades.AsQueryable().ToList();//expresiones LINQ
-
+        //var properties = _context.Propiedades.AsQueryable().ToList();//Se usa el AsQueriable() para convertir la collection en un objeto IQueryable<Property>.
+        //Esto permite usar expresionesd LINQ adicionales sobre la consulta, como filtros y proyecciones antes de ejecutarla
+        var properties = _context.Propiedades.ToList();
         return properties; 
     }
 
     public Property GetPropiedadByID(string id)
     {
         var propiedad = _context.Propiedades.FirstOrDefault(Prop => Prop.Id == new ObjectId(id));
-        _context.SaveChanges();
+        //_context.SaveChanges();
 
         return propiedad;
     }
@@ -41,7 +42,7 @@ public class PropertyRepository : IPropertyRepository
             Distinct().
             ToList();
 
-        _context.SaveChanges();
+       // _context.SaveChanges();
         return states;
     }
     public List<string> getAllLocation()
@@ -50,13 +51,15 @@ public class PropertyRepository : IPropertyRepository
             .Select(p => p.Ubicacion.Localidad)
             .Distinct()
             .ToList();
-        _context.SaveChanges();
+        //_context.SaveChanges();
         return states;
     }
 
     public List<Property> searchProperty(string state, string location, string operation)
     {
-        IQueryable<Property> query = _context.Propiedades;
+        IQueryable<Property> query = _context.Propiedades; //la convierte en un IQuerible para poder ponerle
+        //expresiones LINQ adicionales, como los filtros//
+      
 
         if (!string.IsNullOrEmpty(state))
         {
