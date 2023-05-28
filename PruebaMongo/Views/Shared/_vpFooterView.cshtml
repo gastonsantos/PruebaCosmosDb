@@ -53,17 +53,23 @@
                         <div class="col-12 col-lg-10 d-flex justify-content-end mt-3">
                             <div class="g-recaptcha" data-sitekey="6LdIHkMmAAAAAJSBSAgFDA_PpxvsybKv3E_JDH1k"></div>
                         </div>
+                        <div>
                         @if (TempData["ErrorCaptcha"] != null)
                         {
                             <div class="alert alert-danger">
                                 <p>@TempData["ErrorCaptcha"]</p>
                             </div>
-                        }else
-                        {
-                            <div class="alert alert-success">
-                                <p>Gracias por Contactarte con nosotros</p>
-                            </div>
                         }
+                        </div>
+                        <div>
+                            @if (TempData["CorrectCaptcha"] != null)
+                            {
+                                <div class="alert alert-success">
+                                    <p>@TempData["CorrectCaptcha"]</p>
+                                </div>
+                            }
+                           
+                        </div>
 
                         @section scripts {
                             <script src="https://www.google.com/recaptcha/api.js" async defer></script>

@@ -34,7 +34,7 @@ namespace PruebaMongo.Controllers
             }
             else
             {
-
+                TempData["CorrectCaptcha"] = "Gracias Por Contactarte con nosotros";
                 Contacto message = new Contacto();
                 message.Nombre = Nombre;
                 message.Email = Email;
@@ -87,26 +87,6 @@ namespace PruebaMongo.Controllers
             return result;
         }
 
-        public bool IsReCaptchValid1()
-        {
-            var result = false;
-            var captchaResponse = Request.Form["g-recaptcha-response"];
-            var secretKey = "6LdIHkMmAAAAAAmZZqHJn22-6Qvh3OI_y1ak5f_o";
-            var apiUrl = "https://www.google.com/recaptcha/api/siteverify";
-            var requestUri = string.Format(apiUrl,secretKey, captchaResponse);
-            var request = (HttpWebRequest)WebRequest.Create(requestUri);
-
-            using (WebResponse response = request.GetResponse())
-            {
-                using (StreamReader stream = new StreamReader(response.GetResponseStream()))
-                {
-                    JObject jResponse = JObject.Parse(stream.ReadToEnd());
-                    var isSuccess = jResponse.ContainsKey("success");
-                    result = (isSuccess) ? true : false;
-                }
-
-            }
-            return result;
-        }
+       
     }
 }
