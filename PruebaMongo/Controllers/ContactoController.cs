@@ -27,8 +27,7 @@ namespace PruebaMongo.Controllers
         {
             if (!IsReCaptchValid())
             {
-                // ModelState.AddModelError("", "Validación Captcha incorrecta");
-                //return Redirect("/Property/Listar");
+               
                 TempData["ErrorCaptcha"] = "Validación Captcha incorrecta";
                 return Redirect("/Property/Listar");
             }

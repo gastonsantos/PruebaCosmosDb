@@ -114,8 +114,7 @@ public class PropertyController : Controller
     [HttpGet]
     public ActionResult SearchProperty([FromQuery] string state, [FromQuery] string location, [FromQuery] string operation)
     {
-        // Aquí puedes realizar la lógica para obtener los resultados de búsqueda basados en los parámetros recibidos
-        List<Property> resultList = (List<Property>)this._propertyService.searchProperty(state, location, operation);
+        List<Property> resultList = this._propertyService.searchProperty(state, location, operation);
 
         var states = this._propertyService.getAllState();
         var locations = this._propertyService.getAllLocation();
