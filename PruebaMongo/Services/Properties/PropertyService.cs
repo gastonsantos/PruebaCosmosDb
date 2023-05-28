@@ -36,4 +36,18 @@ public class PropertyService : IPropertyService
             .Take(5)
             .ToList();
     }
+
+    public List<string> getAllState()
+    {
+        return this._propertyRepository.getAllState();
+    }
+    public List<string> getAllLocation()
+    {
+        return this._propertyRepository.getAllLocation();
+    }
+
+    public List<Property> searchProperty(string state, string location, string operation)
+    {
+        return this._propertyRepository.searchProperty(state, location, operation);
+    }
 }

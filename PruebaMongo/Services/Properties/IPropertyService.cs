@@ -10,5 +10,11 @@ public interface IPropertyService
 
     Property getPropertyById(string id);
 
-    void Save(Property properties);  
+    void Save(Property properties);
+
+    public List<string> getAllState();
+
+    public List<string> getAllLocation();
+
+    public List<Property> searchProperty(string state, string location, string operation);
 }

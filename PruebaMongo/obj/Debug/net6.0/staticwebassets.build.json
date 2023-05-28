@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gQvz93aQEPyJX62Rd63vs36vc7HeXVV+/EorNrlMkB0=",
+  "Hash": "eWnApqUvFOjoSptmObv+D+9/5YnzMdDi3OHJfV7XazE=",
   "Source": "PruebaMongo",
   "BasePath": "_content/PruebaMongo",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\Assets\\facebook-gray.png"
     },
     {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\filled-star.svg",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "Assets/filled-star.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\filled-star.svg"
+    },
+    {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\instagram-gray.png",
       "SourceId": "PruebaMongo",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\instagram-gray.png"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\lupa.png",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "Assets/lupa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\lupa.png"
     },
     {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\mail.png",
@@ -153,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\Assets\\tik-tok-gray.png"
     },
     {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\unfilled-star.svg",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "Assets/unfilled-star.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\unfilled-star.svg"
+    },
+    {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\youtube-gray.png",
       "SourceId": "PruebaMongo",
       "SourceType": "Discovered",
@@ -204,23 +255,6 @@
       "OriginalItemSpec": "wwwroot\\casa.jpg"
     },
     {
-      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Embrujada.jpg",
-      "SourceId": "PruebaMongo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
-      "BasePath": "_content/PruebaMongo",
-      "RelativePath": "Casa_Embrujada.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Casa_Embrujada.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Grande.jpg",
       "SourceId": "PruebaMongo",
       "SourceType": "Discovered",
@@ -236,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Casa_Grande.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\CasaFinDeSemana.jpg",
+      "SourceId": "PruebaMongo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\",
+      "BasePath": "_content/PruebaMongo",
+      "RelativePath": "CasaFinDeSemana.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CasaFinDeSemana.jpg"
     },
     {
       "Identity": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Caseta.jpg",

@@ -33,4 +33,48 @@ public class PropertyRepository : IPropertyRepository
         _context.Propiedades.Add(propiedad);
         _context.SaveChanges();
     }
+
+    public List<string> getAllState()
+    {
+        var states = _context.Propiedades.
+            Select(p => p.Ubicacion.Provincia).
+            Distinct().
+            ToList();
+
+        _context.SaveChanges();
+        return states;
+    }
+    public List<string> getAllLocation()
+    {
+        var states = _context.Propiedades
+            .Select(p => p.Ubicacion.Localidad)
+            .Distinct()
+            .ToList();
+        _context.SaveChanges();
+        return states;
+    }
+
+    public List<Property> searchProperty(string state, string location, string operation)
+    {
+        IQueryable<Property> query = _context.Propiedades;
+
+        if (!string.IsNullOrEmpty(state))
+        {
+            query = query.Where(p => p.Ubicacion.Provincia == state);
+        }
+
+        if (!string.IsNullOrEmpty(location))
+        {
+            query = query.Where(p => p.Ubicacion.Localidad == location);
+        }
+
+        if (!string.IsNullOrEmpty(operation))
+        {
+            query = query.Where(p => p.Operacion == operation);
+        }
+
+        List<Property> properties = query.ToList();
+
+        return properties;
+    }
 }

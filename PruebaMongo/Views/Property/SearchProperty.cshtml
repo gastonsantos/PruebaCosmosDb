@@ -1,12 +1,10 @@
-
-@model List<Property>
+﻿@model List<Property>;
 
 <div class="">
     <partial name="_vpBuscadorView"></partial>
 </div>
 
-
-
+<h1 class="mb-4"></h1>
 @if (Model.Count > 0)
 {
 
@@ -19,14 +17,14 @@
                         <img src=@(propiedad.Imagen != null ? propiedad.Imagen : "/Assets/default-house-image.jpg") height="250" width="250" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">@propiedad.Titulo</h5>
-                           
+
                             <p class="card-text">Ubicacion: @propiedad.Ubicacion.Provincia, @propiedad.Ubicacion.Localidad</p>
                             <p class="card-text">Metros Cuadrados: @propiedad.MetrosCuadrados</p>
                             <p class="card-text">Baños: @propiedad.Banos</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">USD$ @propiedad.Precio</small>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -38,7 +36,7 @@
 }
 else
 {
-    <h1 class="mb-4">No se Encontraron Propiedades</h1>
+    <p>No se encontraron propiedades.</p>
 }
 <div class="">
     <partial name="_vpNosotrosView"></partial>
@@ -46,5 +44,5 @@ else
 
 <div class="">
     <partial name="_vpFooterView"></partial>
-   
+
 </div>

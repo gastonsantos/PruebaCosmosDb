@@ -8,6 +8,7 @@ public interface IPropertyRepository
     public List<Property> GetAllPropiedades();
     public Property GetPropiedadByID(string id);
     public void InsertPropiedad(Property propiedad);
-
-   
+    public List<string> getAllLocation();
+    public List<string> getAllState();
+    public List<Property> searchProperty(string state, string location, string operation);
 }

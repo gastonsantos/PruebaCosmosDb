@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.Recommendations;
 using MongoDB.Bson;
+using Newtonsoft.Json;
 using PruebaMongo.Models;
 using PruebaMongo.Repository;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
 using PruebaMongo.Services.Users;
+using PruebaMongo.ViewModels;
 
 namespace PruebaMongo.Controllers;
 
@@ -20,18 +23,26 @@ public class PropertyController : Controller
     {
         this._propertyService = propertyService;
         this._agentService = agentService;
+        this._userService = userService;
     }
 
     public IActionResult Listar()
     {
+        var states = this._propertyService.getAllState();
+        var location = this._propertyService.getAllLocation();
+
+        ViewBag.states = new SelectList(states, states);
+        ViewBag.location = new SelectList(location, location);
+
         return View(this._propertyService.GetAll());
     }
 
     public IActionResult Detalle(string id)
     {
-        Property property = _propertyService.getPropertyById(id);
+        var user = this._userService.GetUserById("647112daa470860fb213457c");
+        var property = this._propertyService.getPropertyById(id);
 
-        return View(property);
+        return View(new PropertyDetailViewModel() { User = user, Property = property });
     }
 
     [HttpGet]
@@ -100,4 +111,25 @@ public class PropertyController : Controller
         _propertyService.Save(property);
         return Redirect("/Property/Listar");
     }
+
+
+    [HttpGet]
+    public ActionResult SearchProperty([FromQuery] string state, [FromQuery] string location, [FromQuery] string operation)
+    {
+        // Aquí puedes realizar la lógica para obtener los resultados de búsqueda basados en los parámetros recibidos
+        List<Property> resultList = (List<Property>)this._propertyService.searchProperty(state, location, operation);
+
+        var states = this._propertyService.getAllState();
+        var locations = this._propertyService.getAllLocation();
+
+        ViewBag.states = new SelectList(states, states);
+        ViewBag.location = new SelectList(locations, locations);
+
+
+
+        return View(resultList);
+    }
+
+
+
 }

@@ -24,9 +24,22 @@ public class UserService : IUserService
         return userFound is not null ? userFound : throw new Exception("User was not found.");
     }
 
-    public void MarkPropertyAsFavourite(Property property)
+    public void TogglePropertyFavorite(Property property, string userId)
     {
-        throw new NotImplementedException();
+        User user = GetUserById(userId);
+
+        var favoriteProperty = user.FavouritesProperties.FirstOrDefault(p => p.Equals(property));
+
+        if (favoriteProperty is null)
+        {
+            user.FavouritesProperties.Add(property);
+        }
+        else
+        {
+            user.FavouritesProperties.Remove(favoriteProperty);
+        }
+
+        _userRepository.UpdateUser(user);
     }
 
     public void Save (User user)

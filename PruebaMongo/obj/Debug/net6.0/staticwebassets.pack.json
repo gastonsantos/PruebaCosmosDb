@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\Assets\\facebook-gray.png"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\filled-star.svg",
+      "PackagePath": "staticwebassets\\Assets\\filled-star.svg"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\instagram-gray.png",
       "PackagePath": "staticwebassets\\Assets\\instagram-gray.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\lupa.png",
+      "PackagePath": "staticwebassets\\Assets\\lupa.png"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\mail.png",
@@ -29,6 +37,10 @@
       "PackagePath": "staticwebassets\\Assets\\tik-tok-gray.png"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\unfilled-star.svg",
+      "PackagePath": "staticwebassets\\Assets\\unfilled-star.svg"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\youtube-gray.png",
       "PackagePath": "staticwebassets\\Assets\\youtube-gray.png"
     },
@@ -37,8 +49,8 @@
       "PackagePath": "staticwebassets\\Casa Embrujada.jpg"
     },
     {
-      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Embrujada.jpg",
-      "PackagePath": "staticwebassets\\Casa_Embrujada.jpg"
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\CasaFinDeSemana.jpg",
+      "PackagePath": "staticwebassets\\CasaFinDeSemana.jpg"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Casa_Grande.jpg",
