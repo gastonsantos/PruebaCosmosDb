@@ -1,6 +1,8 @@
-﻿using MongoDB.Bson;
+﻿using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using PruebaMongo.Models;
+using System.Collections.Generic;
 
 namespace PruebaMongo.Repository;
 
@@ -52,6 +54,66 @@ public class PropertyRepository : IPropertyRepository
             .ToList();
         _context.SaveChanges();
         return states;
-
     }
+
+    public List<Property> searchProperty(string state, string location, string operation)
+    {
+        IQueryable<Property> query = _context.Propiedades;
+
+        if (!string.IsNullOrEmpty(state))
+        {
+            query = query.Where(p => p.Ubicacion.Provincia == state);
+        }
+
+        if (!string.IsNullOrEmpty(location))
+        {
+            query = query.Where(p => p.Ubicacion.Localidad == location);
+        }
+
+        if (!string.IsNullOrEmpty(operation))
+        {
+            query = query.Where(p => p.Operacion == operation);
+        }
+
+        List<Property> properties = query.ToList();
+
+        return properties;
+    }
+
+
+
+
+
+
+    private List<Property> searchLocation(string location)
+    {
+        var property = _context.Propiedades
+            .Where(p => p.Ubicacion.Localidad == location)
+            .AsQueryable()
+            .ToList();
+        _context.SaveChanges();
+
+        return property;
+    }
+    private List<Property> searchState(string state)
+    {
+        var property = _context.Propiedades
+            .Where(p => p.Ubicacion.Provincia == state)
+            .AsQueryable()
+            .ToList();
+        _context.SaveChanges();
+        return property;
+    }
+
+    private List<Property> searchOperation(string operation)
+    {
+        var property = _context.Propiedades
+            .Where(p => p.Operacion == operation)
+            .AsQueryable()
+            .ToList();
+        _context.SaveChanges();
+        return property;
+    }
+
+
 }

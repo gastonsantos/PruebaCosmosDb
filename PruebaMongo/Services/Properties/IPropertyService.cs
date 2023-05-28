@@ -13,4 +13,5 @@ public interface IPropertyService
     void Save(Property properties);
     public List<string> getAllState();
     public List<string> getAllLocation();
+    public List<Property> searchProperty(string state, string location, string operation);
 }

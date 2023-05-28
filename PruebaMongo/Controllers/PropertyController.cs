@@ -110,25 +110,22 @@ public class PropertyController : Controller
         return Redirect("/Property/Listar");
     }
 
+   
     [HttpGet]
-    public ActionResult BuscarPropiedades(string state, string location, string operation)
-    {
-        // Aquí puedes realizar la lógica de búsqueda de propiedades según los parámetros recibidos
-
-        // Ejemplo de redirección a una acción de resultados de búsqueda
-        return RedirectToAction("Resultados", List);
-    }
-    [HttpGet]
-    public ActionResult Resultados(string state, string location, string idb)
+    public ActionResult SearchProperty([FromQuery] string state, [FromQuery] string location, [FromQuery] string operation)
     {
         // Aquí puedes realizar la lógica para obtener los resultados de búsqueda basados en los parámetros recibidos
+        List<Property> resultList = (List<Property>)this._propertyService.searchProperty(state, location, operation);
 
-        // Ejemplo de pasaje de los parámetros a la vista de resultados
-        ViewBag.State = state;
-        ViewBag.Location = location;
-        ViewBag.Idb = idb;
+        var states = this._propertyService.getAllState();
+        var locations = this._propertyService.getAllLocation();
 
-        return View();
+        ViewBag.states = new SelectList(states, states);
+        ViewBag.location = new SelectList(locations, locations);
+
+
+
+        return View(resultList);
     }
 
 

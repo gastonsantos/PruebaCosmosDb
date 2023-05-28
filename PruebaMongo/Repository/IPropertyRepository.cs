@@ -10,5 +10,6 @@ public interface IPropertyRepository
     public void InsertPropiedad(Property propiedad);
     public List<string> getAllLocation();
     public List<string> getAllState();
+    public List<Property> searchProperty(string state, string location, string operation);
 
 }
