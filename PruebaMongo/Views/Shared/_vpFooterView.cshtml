@@ -1,4 +1,7 @@
-﻿
+﻿@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
 <footer id="contacto" class="bg-more-light-gray" style="background-color: #c2c2c2;">
 
     <div class="container">
@@ -38,11 +41,11 @@
 
                     <form asp-action="MensajeNuevo" asp-controller="Contacto" method="POST" id="newsletter">
                         <div class="mb-3">
-                            <input  type="text" class="form-control" id="nombre" name="Nombre" aria-describedby="emailHelp" placeholder="Nombre" required >
+                            <input  type="text" class="form-control" id="nombre" name="Nombre" aria-describedby="emailHelp" placeholder="Nombre" required>
                             <span  class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <input  type="email" class="form-control" id="email" name="Email" aria-describedby="emailHelp" placeholder="Email" required >
+                            <input type="email" class="form-control" id="email" name="Email" aria-describedby="emailHelp" placeholder="Email" required>
                             <span  class="text-danger"></span>
                         </div>
                         <div class="form-group">

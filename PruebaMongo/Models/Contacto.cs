@@ -12,11 +12,11 @@ public class Contacto
     [Required(ErrorMessage = "El Nombre es requerido")]
     public string Nombre { get; set; }
 
-    [Required(ErrorMessage = "El Nombre es requerido")] 
+    [Required(ErrorMessage = "El Email es requerido")] 
     [EmailAddress(ErrorMessage = "Formato Incorrecto")]    
     public string Email { get; set; }
 
-    [Required(ErrorMessage = "El Nombre es requerido")]
+    [Required(ErrorMessage = "El Mensaje es requerido")]
     public string Mensaje { get; set; }
 
 }
