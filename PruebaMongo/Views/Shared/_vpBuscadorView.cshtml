@@ -6,21 +6,23 @@
             <h2 class="text-black fw-700 fz-40 pb-3">Buscador de propiedades</h2>
             <div class="d-flex justify-content-center">
 
-                    <form method="get" action="/Property/SearchProperty">
+                    <form method="get" action="/Property/SearchProperty" style="display: flex; gap: 10px;">
+                        <div>
+                            <select name="state" id="state" class="form-select" aria-label=".form-select-lg example">
 
-                    <select name="state" id="state" class="select">
-                            <option value=''>Provincia</option>
-                     
+                        <option value="">Provincia</option>
+                           
                             @foreach (var state in ViewBag.States as SelectList)
                             {
                                 <option value="@state.Text">@state.Text</option>
                             }
                      
                     </select>
+                    </div>
+                        <div>
+                            <select name="location" id="location" class="form-select" aria-label=".form-select-lg example">
 
-                    <select name="location" id="location" class="select">
-
-                            <option value=''>Localidad</option>
+                            <option value="">Localidad</option>
 
                             @foreach (var location in ViewBag.Location as SelectList)
                             {
@@ -28,9 +30,9 @@
                             }
 
                         </select>
-
-         
-                    <select name="operation" id="operation" class="select">
+                        </div>
+                        <div>
+                            <select name="operation" id="operation" class="form-select" aria-label=".form-select-lg example">
 
 
 
@@ -42,7 +44,7 @@
 
 
                     </select>
-                  
+                        </div>
 
                     <!-- <input type="submit" name="submit" id="submit" value="BUSCAR PROPIEDADES" class="buscar" style='cursor:pointer'> -->
                         <button type="submit" name="submit" id="submit" value="Buscar propiedades" class="btn btn-secondary" style="cursor:pointer">Buscar propiedades <img src="/Assets/lupa.png" alt="logo lupa" width="20px"></button>

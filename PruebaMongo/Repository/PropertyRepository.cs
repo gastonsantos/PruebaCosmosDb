@@ -83,37 +83,4 @@ public class PropertyRepository : IPropertyRepository
 
 
 
-
-
-    private List<Property> searchLocation(string location)
-    {
-        var property = _context.Propiedades
-            .Where(p => p.Ubicacion.Localidad == location)
-            .AsQueryable()
-            .ToList();
-        _context.SaveChanges();
-
-        return property;
-    }
-    private List<Property> searchState(string state)
-    {
-        var property = _context.Propiedades
-            .Where(p => p.Ubicacion.Provincia == state)
-            .AsQueryable()
-            .ToList();
-        _context.SaveChanges();
-        return property;
-    }
-
-    private List<Property> searchOperation(string operation)
-    {
-        var property = _context.Propiedades
-            .Where(p => p.Operacion == operation)
-            .AsQueryable()
-            .ToList();
-        _context.SaveChanges();
-        return property;
-    }
-
-
 }
