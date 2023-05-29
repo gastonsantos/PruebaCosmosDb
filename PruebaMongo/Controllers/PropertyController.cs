@@ -45,6 +45,15 @@ public class PropertyController : Controller
         return View(new PropertyDetailViewModel() { User = user, Property = property });
     }
 
+    public IActionResult Favoritos()
+    {
+        var user = this._userService.GetUserById("647112daa470860fb213457c");
+        IList<Property> properties = user.FavouritesProperties;
+
+        return View(properties);
+
+    }
+
     [HttpGet]
     public IActionResult Agregar()
     {
