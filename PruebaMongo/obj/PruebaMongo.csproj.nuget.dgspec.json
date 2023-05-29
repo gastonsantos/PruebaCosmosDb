@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj": {}
+    "C:\\Users\\Tabatha\\source\\repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj": {
+    "C:\\Users\\Tabatha\\source\\repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj",
+        "projectUniqueName": "C:\\Users\\Tabatha\\source\\repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
         "projectName": "PruebaMongo",
-        "projectPath": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\PruebaMongo.csproj",
-        "packagesPath": "C:\\Users\\Gaston Mica y juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\obj\\",
+        "projectPath": "C:\\Users\\Tabatha\\source\\repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
+        "packagesPath": "C:\\Users\\Tabatha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tabatha\\source\\repos\\PruebaCosmosDb\\PruebaMongo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gaston Mica y juan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tabatha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

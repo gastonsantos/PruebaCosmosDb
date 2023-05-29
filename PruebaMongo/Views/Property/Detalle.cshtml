@@ -3,6 +3,38 @@
 @{
     ViewData["Title"] = "Detalle";
 }
+<style>
+    .date-button {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .date-button input[type="radio"] {
+        display: none;
+    }
+
+    .date-button label {
+        display: block;
+        padding: 10px 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+
+    .date-button input[type="radio"]:checked + label {
+        background-color: #007bff;
+        color: #fff;
+     }
+
+    #solicitarVisita{
+        display: none;
+    }
+
+    .botones{
+        margin-left: 25%;
+    }
+</style>
 
 <h1>Detalle</h1>
 
@@ -59,7 +91,7 @@
                 </div>
 
                     <div class="my-2 float-end">                      
-                        <button class="btn btn-primary">RESERVAR VISITA</button>
+                        <button class="btn btn-primary" id="reservar">RESERVAR VISITA</button>
                     </div>
             </div>
         </div>
@@ -73,3 +105,141 @@
 <div>
     <a asp-action="Listar"  asp-controller="Property">Volver a la lista</a>
 </div>
+
+<div id="solicitarVisita">
+    <div class="container text-center">
+        <form>
+            <!-- Dias -->
+            <div class="container text-center" id="dias">
+                <h3 class="py-3">Solicitar visita:</h3>
+
+            </div>
+
+            <!-- Rango Horario -->
+            <div class="container text-center py-3">
+                <div class="date-button">
+                    <input type="radio" id="mañana" name="rangoHorario">
+                    <label for="mañana">Por la mañana</label>
+                </div>
+                <div class="date-button">
+                    <input type="radio" id="tarde" name="rangoHorario">
+                    <label for="tarde">Por la tarde</label>
+                </div>
+            </div>
+            
+            <!-- Datos del usuario -->
+            <div class="row g-3 w-50 d-inline-flex">
+                <div class="col-12">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                </div>
+
+            </div>
+
+            <div class="row g-3 w-50 py-3 botones">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-danger w-100" id="cancelar">Cancelar</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary w-100">Solicitar visita</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        (function () {
+            let fecha = (function () {
+                let now = new Date();
+                return new Date(now.setDate(now.getDate() - now.getDay() - -1));
+            })();
+
+            let meses = [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre"
+            ];
+
+            let semana = Array(5).fill(fecha).map(function (fecha, i) {
+                if (i !== 0) {
+                    fecha.setDate(fecha.getDate() + 1);
+                }
+                let name = fecha.toLocaleDateString('es-ES', { weekday: 'long' });
+                return {
+                    "dia": name.charAt(0).toUpperCase() + name.slice(1),
+                    "numero": fecha.getDate(),
+                    "mesNumero": fecha.getMonth() + 1, 
+                    "mes": meses[fecha.getMonth()]
+                };
+            });
+            
+            let contador = 0;
+            let seccionDias = document.getElementById("dias");
+
+            semana.forEach(function (dia) {
+                contador++;
+                let div = document.createElement('div');
+                div.className = 'date-button';
+                let input = document.createElement('input');
+                input.type = 'radio';
+                input.id = 'date' + contador;
+                input.name = 'date';
+                let label = document.createElement('label');
+                label.htmlFor = 'date' + contador;
+                label.textContent = dia.dia + ' ' + dia.numero;
+                div.appendChild(input);
+                div.appendChild(label);
+                seccionDias.appendChild(div);
+            });
+            console.log(semana);
+        })();
+
+        let dateButtons = document.getElementsByClassName('date-button');
+        let fechaSeleccionada;
+
+        for (let i = 0; i < dateButtons.length; i++) {
+            dateButtons[i].addEventListener('click', function () {
+                let siblings = this.parentNode.children;
+                for (let j = 0; j < siblings.length; j++) {
+                    siblings[j].classList.remove('active');
+                }
+                this.classList.toggle('active');
+
+                // Mostrar por consola la fecha seleccionada
+                let label = this.querySelector('label');
+                fechaSeleccionada = label.textContent;
+                console.log("Fecha seleccionada:", fechaSeleccionada);
+            });
+        }
+
+        document.getElementById("reservar").addEventListener("click", function () {
+            let seccionSolicitarVisita = document.getElementById("solicitarVisita");
+            seccionSolicitarVisita.style.display = "block";
+        });
+
+        document.getElementById("cancelar").addEventListener("click", function () {
+            let seccionSolicitarVisita = document.getElementById("solicitarVisita");
+            seccionSolicitarVisita.style.display = "none";
+        });
+
+    });
+
+</script>
