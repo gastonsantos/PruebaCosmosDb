@@ -5,81 +5,82 @@
     Property property = Model.Property;
     User user = Model.User;
 }   
+<div class="container">
+    <h1>Detalle</h1>
 
-<h1>Detalle</h1>
+    <div>
+        <h4>@property.Titulo</h4>
 
-<div>
-    <h4>@property.Titulo</h4>
+        <form method="post" asp-controller="User" asp-action="TogglePropertyFavorite">
+            <input type="hidden" name="propertyId" value="@property.Id" />
+            <button type="submit" class="btn btn-link">
+                <img style="z-index:1111; cursor: pointer;" width="35" height="35" src=@(user.FavouritesProperties.Contains(property) ? "/Assets/filled-star.svg" : "/Assets/unfilled-star.svg") alt="star" />
+            </button>
+        </form>
 
-    <form method="post" asp-controller="User" asp-action="TogglePropertyFavorite">
-        <input type="hidden" name="propertyId" value="@property.Id" />
-        <button type="submit" class="btn btn-link">
-            <img style="z-index:1111; cursor: pointer;" width="35" height="35" src=@(user.FavouritesProperties.Contains(property) ? "/Assets/filled-star.svg" : "/Assets/unfilled-star.svg") alt="star" />
-        </button>
-    </form>
-
-    <hr />
-    <div class="row">
-        <div class="col-lg-4">
-            <img class="w-100" src="@(property.Imagen != null ? property.Imagen : "/Assets/default-house-image.jpg")" />
-        </div>
-        <div class="col-lg-8 mt-4 mt-lg-0">
-            <h4>Contacto</h4>
-            <p>@property.Agente.Nombre</p>
-            <p>Tel: @property.Agente.Telefono</p>
-            <p>Email: @property.Agente.Email</p>
-
-            <h4>Dirección</h4>
-            <p>@property.Ubicacion.Provincia, @property.Ubicacion.Localidad</p>
-            <p>@property.Ubicacion.Calle, @property.Ubicacion.Numero, CP: @property.Ubicacion.CodigoPostal</p>
-            <p>Piso: @property.Ubicacion.Piso,Departamento: @property.Ubicacion.Departamento</p>
-            <h5>USD$@property.Precio</h5>
-
-            <div class="row flex-wrap">
-                <div class="card col-6 col-md">
-                    <div class="card-body text-center">
-                        <img src="/images/icons/area.png" class="w-50" />
-                        <h5>Superficie</h5>
-                        <p>@property.MetrosCuadrados mts.</p>
-                    </div>
-                </div>
-                <div class="card col-6 col-md">
-                    <div class="card-body text-center">
-                        <img src="/images/icons/ambientes.png" class="w-50" />
-                        <h5>Ambientes</h5>
-                        <p>@property.Habitaciones</p>
-                    </div>
-                </div>
-                <div class="card col-6 col-md">
-                    <div class="card-body text-center">
-                        <img src="/images/icons/baños.png" class="w-50" />
-                        <h5>Baños</h5>
-                        <p>@property.Banos</p>
-                    </div>
-                </div>
-
-                <div class="card col-6 col-md">
-                    <div class="card-body text-center px-2">
-                        <img src="/images/icons/cocheras.png" class="w-50" />
-                        <h5>Cochera</h5>
-                        <p>@(property.Garaje ? "1" : "0")</p>
-                    </div>
-                </div>
-
+        <hr />
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="w-100" src="@(property.Imagen != null ? property.Imagen : "/Assets/default-house-image.jpg")" />
             </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <h4>Contacto</h4>
+                <p>@property.Agente.Nombre</p>
+                <p>Tel: @property.Agente.Telefono</p>
+                <p>Email: @property.Agente.Email</p>
 
-            <div class="my-2 float-end">
-                <button class="btn btn-primary">RESERVAR VISITA</button>
+                <h4>Dirección</h4>
+                <p>@property.Ubicacion.Provincia, @property.Ubicacion.Localidad</p>
+                <p>@property.Ubicacion.Calle, @property.Ubicacion.Numero, CP: @property.Ubicacion.CodigoPostal</p>
+                <p>Piso: @property.Ubicacion.Piso,Departamento: @property.Ubicacion.Departamento</p>
+                <h5>USD$@property.Precio</h5>
+
+                <div class="row flex-wrap">
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center">
+                            <img src="/images/icons/area.png" class="w-50" />
+                            <h5>Superficie</h5>
+                            <p>@property.MetrosCuadrados mts.</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center">
+                            <img src="/images/icons/ambientes.png" class="w-50" />
+                            <h5>Ambientes</h5>
+                            <p>@property.Habitaciones</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center">
+                            <img src="/images/icons/baños.png" class="w-50" />
+                            <h5>Baños</h5>
+                            <p>@property.Banos</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-md">
+                        <div class="card-body text-center px-2">
+                            <img src="/images/icons/cocheras.png" class="w-50" />
+                            <h5>Cochera</h5>
+                            <p>@(property.Garaje ? "1" : "0")</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="my-2 float-end">
+                    <button class="btn btn-primary">RESERVAR VISITA</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="mt-4">
-    <h4>Descripción</h4>
-    <p>@property.Descripcion</p>
-</div>
+    <div class="mt-4">
+        <h4>Descripción</h4>
+        <p>@property.Descripcion</p>
+    </div>
 
-<div>
-    <a asp-action="Listar" asp-controller="Property">Volver a la lista</a>
+    <div>
+        <a asp-action="Listar" asp-controller="Property">Volver a la lista</a>
+    </div>
 </div>
