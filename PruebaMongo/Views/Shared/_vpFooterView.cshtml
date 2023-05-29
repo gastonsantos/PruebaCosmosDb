@@ -1,5 +1,5 @@
 ﻿
-<footer id="contacto" class="bg-more-light-gray" style="background-color: #c2c2c2;">
+<footer id="contacto" class="bg-more-light-gray justify-content-center" style="background-color: #c2c2c2;">
 
     <div class="container">
         <div class="row py-5">
@@ -53,23 +53,7 @@
                         <div class="col-12 col-lg-10 d-flex justify-content-end mt-3">
                             <div class="g-recaptcha" data-sitekey="6LdIHkMmAAAAAJSBSAgFDA_PpxvsybKv3E_JDH1k"></div>
                         </div>
-                        <div>
-                        @if (TempData["ErrorCaptcha"] != null)
-                        {
-                            <div class="alert alert-danger">
-                                <p>@TempData["ErrorCaptcha"]</p>
-                            </div>
-                        }
-                        </div>
-                        <div>
-                            @if (TempData["CorrectCaptcha"] != null)
-                            {
-                                <div class="alert alert-success">
-                                    <p>@TempData["CorrectCaptcha"]</p>
-                                </div>
-                            }
-                           
-                        </div>
+                       
 
                         @section scripts {
                             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -79,8 +63,48 @@
                         <div class="d-flex justify-content-end">
                             <div class="spinner-border text-info" id="spinner-newsletter" style="display: none;"></div>
                             <button type="submit" class="btn btn-primary px-4" id="btn-newsletter">Enviar</button>
+                            <span id="spinner-newsletter" style="display: none;">Enviando...</span>
                         </div>
+                        
                     </form>
+                <div id="gracias-newsletter" style="display: none;">
+                    Gracias por suscribirte a nuestro boletín.
+                </div>
+
+                       
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        var request;
+                        $("#message").submit(function (event) {
+                            event.preventDefault();
+                            $("#btn-newsletter").hide();
+                            $("#spinner-newsletter").show();
+                            if (request) {
+                                request.abort();
+                            }
+                            var $form = $(this);
+                            var $inputs = $form.find("input, select, button, textarea");
+                            var serializedData = $form.serialize();
+                            $inputs.prop("disabled", true);
+                            request = $.ajax({
+                                url: '@Url.Action("MensajeNuevo", "ContactoController")', // Reemplaza 'ControllerName' por el nombre de tu controlador
+                                type: "post",
+                                data: serializedData
+                            });
+                            request.done(function (response, textStatus, jqXHR) {
+                                console.log(response);
+                                if (response.success) {
+                                    window.history.replaceState(null, null, "?estado=newsletter-enviado");
+                                    $("#message").hide();
+                                    $("#spinner-newsletter").hide();
+                                    $("#gracias-newsletter").show();
+                                } else {
+                                    $inputs.prop("disabled", false);
+                                    $("#btn-newsletter").show();
+                                }
+                            });
+                        });
+                    </script>
                 </div>
                 <div>
                     <h4 class="fw-700 fz-20 text-dark-gray pb-2">Síganos en las redes</h4>

@@ -23,7 +23,7 @@ namespace PruebaMongo.Controllers
         }
 
         [HttpPost]
-        public IActionResult MensajeNuevo(string Nombre, string Email, string Mensaje)
+        public IActionResult MensajeNuevo1(string Nombre, string Email, string Mensaje)
         {
             if (!IsReCaptchValid())
             {
@@ -46,6 +46,28 @@ namespace PruebaMongo.Controllers
             }
             
         }
+
+        [HttpPost]
+        public IActionResult MensajeNuevo(string Nombre, string Email, string Mensaje)
+        {
+            if (!IsReCaptchValid())
+            {
+                TempData["ErrorCaptcha"] = "Validación Captcha incorrecta";
+                return RedirectToAction("Listar", "Property");
+            }
+            else
+            {
+                TempData["CorrectCaptcha"] = "Gracias Por Contactarte con nosotros";
+                Contacto message = new Contacto();
+                message.Nombre = Nombre;
+                message.Email = Email;
+                message.Mensaje = Mensaje;
+
+                this._messageService.SendMessage(message);
+                return RedirectToAction("Listar", "Property");
+            }
+        }
+
 
 
 

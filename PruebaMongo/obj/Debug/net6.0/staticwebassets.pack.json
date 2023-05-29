@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\Assets\\instagram-gray.png"
     },
     {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\logoCasa.com.png",
+      "PackagePath": "staticwebassets\\Assets\\logoCasa.com.png"
+    },
+    {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\lupa.png",
       "PackagePath": "staticwebassets\\Assets\\lupa.png"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\phone.png",
       "PackagePath": "staticwebassets\\Assets\\phone.png"
+    },
+    {
+      "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\pngwing.com (1).png",
+      "PackagePath": "staticwebassets\\Assets\\pngwing.com (1).png"
     },
     {
       "Id": "C:\\Users\\Gaston Mica y juan\\Desktop\\PruebaMongoDb\\PruebaMongo\\PruebaMongo\\wwwroot\\Assets\\tik-tok-gray.png",
