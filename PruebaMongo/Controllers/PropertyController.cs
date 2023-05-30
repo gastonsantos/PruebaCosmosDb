@@ -64,12 +64,17 @@ public class PropertyController : Controller
     }
 
 
-    public IActionResult GetRecommendedProperties()
+    public IActionResult ShowRecommended()
     {
         User user = this._userService.GetUserById("647112daa470860fb213457c");
         IList<Property> recommendedPropertiesForUser = this._propertyService.RecommendProperties(user);
 
-        return View(recommendedPropertiesForUser);
+        if (recommendedPropertiesForUser.Count > 0)
+        {
+            return View(recommendedPropertiesForUser);
+        }
+
+        return View("Listar");
     }
 
     [HttpPost]

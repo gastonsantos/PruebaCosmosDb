@@ -1,0 +1,30 @@
+﻿@model List<Property>
+
+
+<div class="container my-5">
+        <h1>Propiedades Recomendadas</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
+            @foreach (var propiedad in Model)
+            {
+                <a href="/Property/Detalle/@propiedad.Id" class="text-decoration-none text-black">
+                    <div class="col">
+                        <div class="card">
+                            <img src=@(propiedad.Imagen != null ? propiedad.Imagen : "/Assets/default-house-image.jpg") height="250" width="250" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">@propiedad.Titulo</h5>
+
+                                <p class="card-text">Ubicacion: @propiedad.Ubicacion.Provincia, @propiedad.Ubicacion.Localidad</p>
+                                <p class="card-text">Metros Cuadrados: @propiedad.MetrosCuadrados</p>
+                                <p class="card-text">Baños: @propiedad.Banos</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">USD$ @propiedad.Precio</small>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+</div>

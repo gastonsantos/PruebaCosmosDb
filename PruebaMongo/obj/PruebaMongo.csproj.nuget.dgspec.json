@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\PruebaMongo.csproj": {}
+    "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\PruebaMongo.csproj": {
+    "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\PruebaMongo.csproj",
+        "projectUniqueName": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
         "projectName": "PruebaMongo",
-        "projectPath": "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\PruebaMongo.csproj",
-        "packagesPath": "C:\\Users\\Tabatha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\obj\\",
+        "projectPath": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
+        "packagesPath": "C:\\Users\\u633558\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tabatha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\u633558\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
