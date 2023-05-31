@@ -2,11 +2,13 @@ using MongoFramework;
 using PruebaMongo.Repository;
 using PruebaMongo.Repository.Messages;
 using PruebaMongo.Repository.Users;
+using PruebaMongo.Repository.Visita;
 using PruebaMongo.Services;
 using PruebaMongo.Services.Agents;
 using PruebaMongo.Services.Messages;
 using PruebaMongo.Services.Properties;
 using PruebaMongo.Services.Users;
+using PruebaMongo.Services.Visita;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +24,9 @@ builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IUserService, UserService>();
 builder.Services.AddSingleton<IMessageService, MessageService>();
 builder.Services.AddSingleton<IMessageRepository, MessageRepository>();
+
+builder.Services.AddSingleton<IVisitaRepository, VisitaRepository>();
+builder.Services.AddSingleton<IVisitaService, VisitaService>();
 var app = builder.Build();
 
 

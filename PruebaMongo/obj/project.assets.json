@@ -10175,19 +10175,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tabatha\\.nuget\\packages\\": {}
+    "C:\\Users\\Lea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\PruebaMongo.csproj",
+      "projectUniqueName": "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
       "projectName": "PruebaMongo",
-      "projectPath": "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\PruebaMongo.csproj",
-      "packagesPath": "C:\\Users\\Tabatha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tabatha\\Desktop\\web3\\PruebaMongo\\obj\\",
+      "projectPath": "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
+      "packagesPath": "C:\\Users\\Lea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tabatha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10265,7 +10265,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

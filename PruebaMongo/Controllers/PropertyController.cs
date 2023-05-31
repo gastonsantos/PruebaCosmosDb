@@ -19,6 +19,7 @@ public class PropertyController : Controller
     readonly IAgentService _agentService;
     readonly IUserService _userService;
 
+
     public PropertyController(IPropertyService propertyService, IAgentService agentService, IUserService userService)
     {
         this._propertyService = propertyService;
@@ -59,7 +60,7 @@ public class PropertyController : Controller
     {
         var agents = this._agentService.GetAllAgents();
         ViewBag.Agents = new SelectList(agents, "Id", "Nombre");
-       // ViewBag.Agents = new SelectList(agents);
+        // ViewBag.Agents = new SelectList(agents);
         return View();
     }
 
@@ -73,7 +74,7 @@ public class PropertyController : Controller
     }
 
     [HttpPost]
-    public IActionResult Agregar(Property property, IFormFile imagen, string agent, string provincia, string localidad, string calle, int numero, string codigoPostal, string departamento, string piso )
+    public IActionResult Agregar(Property property, IFormFile imagen, string agent, string provincia, string localidad, string calle, int numero, string codigoPostal, string departamento, string piso)
     {
         //codigo Imagen
         Property propiedades1 = property;
@@ -85,7 +86,7 @@ public class PropertyController : Controller
 
             imagen.CopyTo(stream);
 
-            
+
 
             propiedades1.Imagen = @"\" + property.Titulo + ".jpg";
 
@@ -94,17 +95,17 @@ public class PropertyController : Controller
         {
             propiedades1.Imagen = "/Assets/default-house-image.jpg";
         }
-       
+
         //codigo Amenidades
         List<string> amenidadesList = property.Amenidades.ToList();
 
         property.Amenidades = amenidadesList;
 
 
-        property.Agente= this._agentService.GetAgente(agent);
+        property.Agente = this._agentService.GetAgente(agent);
 
-        Ubicacion ubicacion= new Ubicacion();
-        
+        Ubicacion ubicacion = new Ubicacion();
+
         ubicacion.Provincia = provincia;
         ubicacion.Localidad = localidad;
         ubicacion.Calle = calle;
@@ -113,9 +114,9 @@ public class PropertyController : Controller
         ubicacion.Departamento = departamento;
         ubicacion.Piso = piso;
 
-        property.Ubicacion= ubicacion;
-     
+        property.Ubicacion = ubicacion;
 
+        
 
         _propertyService.Save(property);
         return Redirect("/Property/Listar");
@@ -139,6 +140,16 @@ public class PropertyController : Controller
         return View(resultList);
     }
 
+    //[HttpPost]
+    //public IActionResult AgendarVisita(string id,string nombre,string email,string telefono) {
 
+    //    var user = this._userService.GetUserById("647112daa470860fb213457c");
+    //    var property = this._propertyService.getPropertyById(id);
+    //    var name 
+
+
+
+
+    //}
 
 }

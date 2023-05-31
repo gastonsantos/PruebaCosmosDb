@@ -3,10 +3,9 @@
     "",
     "\\PruebaMongo",
     "\\PruebaMongo\\Repository",
-    "\\PruebaMongo\\Repository\\Users",
-    "\\PruebaMongo\\Views",
-    "\\PruebaMongo\\Views\\Shared"
+    "\\PruebaMongo\\Services",
+    "\\PruebaMongo\\Services\\Visita"
   ],
-  "SelectedNode": "\\PruebaMongo\\Repository\\Users\\UserRepository.cs",
+  "SelectedNode": "\\PruebaMongo\\Repository\\AppContext.cs",
   "PreviewInSolutionExplorer": false
 }
