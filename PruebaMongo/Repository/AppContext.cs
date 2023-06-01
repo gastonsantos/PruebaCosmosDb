@@ -17,4 +17,6 @@ public class AppContext : MongoDbContext
     public MongoDbSet<Agente> Agentes { get; set; }
     public MongoDbSet<User> Users { get; set; }
     public MongoDbSet<Contacto> Messages { get; set; }
+
+    public MongoDbSet<Visit> Visita { get; set; }
 }
