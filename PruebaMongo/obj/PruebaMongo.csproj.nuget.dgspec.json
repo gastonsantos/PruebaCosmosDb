@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {}
+    "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {
+    "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
+        "projectUniqueName": "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
         "projectName": "PruebaMongo",
-        "projectPath": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
-        "packagesPath": "C:\\Users\\u633558\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u633558\\Desktop\\PruebaCosmosDb\\PruebaMongo\\obj\\",
+        "projectPath": "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\PruebaMongo.csproj",
+        "packagesPath": "C:\\Users\\Lea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lea\\Source\\Repos\\PruebaCosmosDb\\PruebaMongo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\u633558\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Lea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

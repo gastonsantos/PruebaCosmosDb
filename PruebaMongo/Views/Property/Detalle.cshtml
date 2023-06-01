@@ -11,23 +11,23 @@
         margin-right: 5px;
     }
 
-    .date-button input[type="radio"] {
-        display: none;
-    }
+        .date-button input[type="radio"] {
+            display: none;
+        }
 
-    .date-button label {
-        display: block;
-        padding: 10px 20px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        cursor: pointer;
-        border-radius: 30px;
-    }
+        .date-button label {
+            display: block;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 30px;
+        }
 
-    .date-button input[type="radio"]:checked + label {
-        background-color: #007bff;
-        color: #fff;
-    }
+        .date-button input[type="radio"]:checked + label {
+            background-color: #007bff;
+            color: #fff;
+        }
 
     #solicitarVisita {
         display: none;
@@ -38,6 +38,7 @@
     }
 </style>
 <div class="container">
+
     <h1>Detalle</h1>
 
     <div>
@@ -119,7 +120,7 @@
 
 <div id="solicitarVisita">
     <div class="container text-center">
-        <form>
+        <form asp-controller="Visita" asp-action="AgendarVisita" method="post">
             <!-- Dias -->
             <div class="container text-center" id="dias">
                 <h3 class="py-3">Solicitar visita:</h3>
@@ -129,25 +130,26 @@
             <!-- Rango Horario -->
             <div class="container text-center py-3">
                 <div class="date-button">
-                    <input type="radio" id="mañana" name="rangoHorario">
+                    <input type="radio" value="Mañana" id="mañana" name="RangoHorario" required>
                     <label for="mañana">Por la mañana</label>
                 </div>
                 <div class="date-button">
-                    <input type="radio" id="tarde" name="rangoHorario">
+                    <input type="radio" value="Tarde" id="tarde" name="RangoHorario" required>
                     <label for="tarde">Por la tarde</label>
                 </div>
+
             </div>
 
             <!-- Datos del usuario -->
             <div class="row g-3 w-50 d-inline-flex">
                 <div class="col-12">
-                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <input type="email" class="form-control" id="email" name="Email" placeholder="Email" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                    <input type="tel" class="form-control" id="telefono" name="Telefono" placeholder="Teléfono" required>
                 </div>
 
             </div>
@@ -212,7 +214,8 @@
                 let input = document.createElement('input');
                 input.type = 'radio';
                 input.id = 'date' + contador;
-                input.name = 'date';
+                input.name = 'Fecha';
+                input.value = dia.numero + '/' + dia.mesNumero;
                 let label = document.createElement('label');
                 label.htmlFor = 'date' + contador;
                 label.textContent = dia.dia + ' ' + dia.numero + '/' + dia.mesNumero;
