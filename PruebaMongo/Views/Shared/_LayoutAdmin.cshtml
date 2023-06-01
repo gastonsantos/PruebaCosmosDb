@@ -1,0 +1,94 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuCasa - Busca la mejor para vos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PruebaMongo.styles.css" asp-append-version="true" />
+   
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+
+</head>
+<body>
+    <header>
+        
+        
+        <section class="bg-light-gray py-2 d-none d-md-block" style="background-color: #c2c2c2;">
+       
+                <div class="d-flex flex-row flex-lg-row justify-content-end align-items-end gap-2">
+                    
+                    <div class="d-flex flex-row">
+                    <a href="" class="nav-link text-dark ">
+                            <img src="/Assets/mail.png" alt="email icono" class="px-2" width="40px">hola@hshTucasa.net
+                        </a>
+                    </div>
+                    <div class="d-flex flex-row pt-2 pt-lg-0 mx-0 mx-lg-4">
+                    <a href="tel:+864567888" class="nav-link text-dark "><img src="/Assets/phone.png" alt="telefono icono" class="px-2" width="35px">+78689076 </a>
+                    </div>
+                    <div class="pt-2 pt-lg-0 d-flex gap-2">
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/facebook-gray.png" alt="facebook hsh" width="26px"></a>
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/instagram-gray.png" alt="instagram hsh" width="26px"></a>
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/tik-tok-gray.png" alt="instagram hsh" width="26px"></a>
+                        <a href="" target="_blank" class="d-flex justify-content-center align-items-center"><img src="/Assets/youtube-gray.png" alt="youtube hsh" width="30px"></a>
+                    </div>
+           
+                </div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg" style="background-color: #FFE4C4;">
+            
+            <div class="container" style="background-color: #FFE4C4;">
+                <a class="navbar-brand" asp-area="" asp-controller="Property" asp-action="listar">
+                    <img src="/Assets/logoCasa.com.png" alt="icono-logo" class="px-2" width="60px">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                     
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Property" asp-action="Agregar">Agregar Propiedades</a>
+                            </li>
+
+                        </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item text-dark-gray">
+                            <a class="nav-link text-dark" href="">Propiedades</a>
+                        </li>
+              
+            
+            </div>
+        </nav>
+        
+    </header>
+    <div class="container-fluid" >
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+   
+</body>
+</html>
+
+
+

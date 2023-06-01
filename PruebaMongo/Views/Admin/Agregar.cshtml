@@ -1,0 +1,140 @@
+﻿
+@model Property
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+
+<div class="container-fluid ">
+    <div class="container col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <form method="post" enctype="multipart/form-data" action="/Property/Agregar">
+             <div class="form-group">
+                 <label>Título:</label>
+                 <input type="text" class="form-control" name="Titulo" />
+            </div>
+             <div class="form-group">
+                 <label>Descripción:</label>
+                <textarea class="form-control" name="Descripcion"></textarea>
+             </div>
+            <div class="form-group">
+                <label>Operacion:</label>
+                <select class="form-control" name="Operacion">
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Emprendimiento">Emprendimiento</option>
+                </select>
+            </div>
+        <div class="form-group">
+            <label>Precio:</label>
+            <input type="number" class="form-control" name="Precio" step="0.01" />
+        </div>
+        <div class="form-group">
+            <label>Metros Cuadrados:</label>
+            <input type="number" class="form-control" name="MetrosCuadrados" />
+        </div>
+        <div class="form-group">
+            <label>Habitaciones:</label>
+            <input type="number" class="form-control" name="Habitaciones" />
+        </div>
+        <div class="form-group">
+            <label>Baños:</label>
+            <input type="number" class="form-control" name="Banos" />
+        </div>
+        <div class="form-group">
+            <label>Garaje:</label>
+            <input type="checkbox" name="Garaje" />
+        </div>
+        <div class="form-group">
+            <label>Amenidades:</label>
+            <div class="input-group">
+                <input type="text" id="amenidadesInput" class="form-control" />
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-primary" onclick="agregarAmenidad()">Agregar</button>
+                </div>
+            </div>
+            <ul id="amenidadesList" class="list-group mt-2"></ul>
+              
+            <input type="hidden" name="Amenidades" id="amenidadesHidden" value="" />
+        </div>
+            <div class="form-group">
+                <label>Ubicación:</label>
+                <input type="text" class="form-control" name="provincia" placeholder="Provincia" />
+                <input type="text" class="form-control" name="localidad" placeholder="Localidad" />
+                <input type="text" class="form-control" name="calle" placeholder="Calle" />
+                <input type="number" class="form-control" name="numero" placeholder="Número" />
+                <input type="text" class="form-control" name="codigoPostal" placeholder="Código Postal" />
+                <input type="text" class="form-control" name="departamento" placeholder="Departamento" />
+                <input type="text" class="form-control" name="piso" placeholder="¨Piso" />
+            </div>
+
+
+        <div class="form-group">
+            <label>Ingrese la Imagen:</label>
+            <input name="imagen" type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" placeholder="">
+            <small id="fileHelp" class="form-text text-muted">Por favor, seleccione un archivo de imagen.</small>
+
+        </div>
+
+            <div class="form-group">
+                <label for="Agente_Id">Agente</label>
+                <select id="agent" name="agent" class="form-control">
+                    <option value="">Seleccione un agente</option>
+                    @foreach (var agent in ViewBag.Agents as SelectList)
+                    {
+                        <option value="@agent.Value">@agent.Text</option>
+                    }
+                </select>
+
+            </div>
+
+            
+                
+         
+            
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    </div>  
+</div>
+
+<script>
+    var amenidadesArray = [];
+
+    function agregarAmenidad() {
+        var amenidad = document.getElementById("amenidadesInput").value;
+        amenidadesArray.push(amenidad);
+        actualizarAmenidades();
+        limpiarCampoAmenidades();
+    }
+    function eliminarAmenidad(index) {
+        amenidadesArray.splice(index, 1);
+        actualizarAmenidades();
+    }
+
+    function actualizarAmenidades() {
+        var amenidadesList = document.getElementById("amenidadesList");
+        amenidadesList.innerHTML = "";
+        amenidadesArray.forEach(function (amenidad, index) {
+            var li = document.createElement("li");
+            li.textContent = amenidad;
+            li.className = "list-group-item"
+
+            var eliminarButton = document.createElement("button");
+            eliminarButton.textContent = "Eliminar";
+            eliminarButton.className = "btn btn-danger btn-xs float-right ml-2"; 
+            eliminarButton.addEventListener("click", function () {
+                eliminarAmenidad(index);
+            });
+
+            li.appendChild(eliminarButton);
+            amenidadesList.appendChild(li);
+        });
+        document.getElementById("amenidadesHidden").value = amenidadesArray.join(",");
+    }
+
+    function limpiarCampoAmenidades() {
+        document.getElementById("amenidadesInput").value = "";
+    }
+</script>
+
+

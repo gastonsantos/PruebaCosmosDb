@@ -1,5 +1,6 @@
 ﻿using PruebaMongo.Repository;
 using PruebaMongo.Models;
+using MongoDB.Bson;
 
 namespace PruebaMongo.Services.Properties;
 
@@ -20,6 +21,11 @@ public class PropertyService : IPropertyService
     {
 
         return this._propertyRepository.GetPropiedadByID(id);
+    }
+
+    public Property GetProperyForObjectId(ObjectId id)
+    {
+        return this._propertyRepository.GetProperyForObjectId(id);
     }
 
     public IList<Property> GetAll()
@@ -50,4 +56,15 @@ public class PropertyService : IPropertyService
     {
         return this._propertyRepository.searchProperty(state, location, operation);
     }
+
+    public void DeleteProperty(string id)
+    {
+        this._propertyRepository.DeleteProperty(id);
+    }
+
+    public void EditProperty(Property property)
+    {
+        this._propertyRepository.EditProperty(property);
+    }
+
 }

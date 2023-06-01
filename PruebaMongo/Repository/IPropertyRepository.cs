@@ -12,4 +12,10 @@ public interface IPropertyRepository
     public List<string> getAllState();
     public List<Property> searchProperty(string state, string location, string operation);
 
+    public void EditProperty(Property property);
+
+    public void DeleteProperty(string id);
+
+    public Property GetProperyForObjectId(ObjectId id);
+
 }

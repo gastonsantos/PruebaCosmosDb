@@ -1,0 +1,139 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Property
+
+
+
+<div class="container-fluid ">
+    <div class="container col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <form method="post" enctype="multipart/form-data" action="/Admin/Modificar">
+
+               <div class="form-group">
+                <label>Id</label>
+                <input  type="text" class="form-control" name="Id" value="@Model.Id" />
+                 </div>
+
+            <div class="form-group">
+                <label>Título:</label>
+                <input type="text" class="form-control" name="Titulo" value="@Model.Titulo" />
+            </div>
+            <div class="form-group">
+                <label>Descripción:</label>
+                <input class="form-control" name="Descripcion" value="@Model.Descripcion"></input>
+            </div>
+            <div class="form-group">
+                <label>Operacion:</label>
+                <select class="form-control" name="Operacion">
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Emprendimiento">Emprendimiento</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Precio:</label>
+                <input type="number" class="form-control" name="Precio" step="0.01" value="@Model.Precio" />
+            </div>
+            <div class="form-group">
+                <label>Metros Cuadrados:</label>
+                <input type="number" class="form-control" name="MetrosCuadrados" value="@Model.MetrosCuadrados" />
+            </div>
+            <div class="form-group">
+                <label>Habitaciones:</label>
+                <input type="number" class="form-control" name="Habitaciones" value="@Model.Habitaciones" />
+            </div>
+            <div class="form-group">
+                <label>Baños:</label>
+                <input type="number" class="form-control" name="Banos" value="@Model.Banos" />
+            </div>
+            <div class="form-group">
+                <label>Garaje:</label>
+                <input type="checkbox" name="Garaje" value="@Model.Garaje" />
+            </div>G
+            <div class="form-group">
+                <label>Amenidades:</label>
+                <div class="input-group">
+                    <input type="text" id="amenidadesInput" class="form-control" />
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary" onclick="agregarAmenidad()">Agregar</button>
+                    </div>
+                </div>
+                <ul id="amenidadesList" class="list-group mt-2"></ul>
+
+                <input type="hidden" name="Amenidades" id="amenidadesHidden" value="" />
+            </div>
+
+           
+            <div class="form-group">
+                <label>Ubicación:</label>
+                <input type="text" class="form-control" name="provincia" value="@Model.Ubicacion.Provincia" />
+                <input type="text" class="form-control" name="localidad" value="@Model.Ubicacion.Localidad" />
+                <input type="text" class="form-control" name="calle" value="@Model.Ubicacion.Calle" />
+                <input type="number" class="form-control" name="numero" value="@Model.Ubicacion.Numero" />
+                <input type="text" class="form-control" name="codigoPostal" value="@Model.Ubicacion.CodigoPostal" />
+                <input type="text" class="form-control" name="departamento" value="@Model.Ubicacion.Departamento" />
+                <input type="text" class="form-control" name="piso" value="@Model.Ubicacion.Piso" />
+            </div>
+
+         
+
+               <div class="form-group">
+                <label for="Agente_Id">Agente</label>
+                <select id="agent" name="agent" class="form-control">
+                    <option value="">Seleccione un agente</option>
+                    @foreach (var agent in ViewBag.Agents as SelectList)
+                    {
+                            <option value="@agent.Value">@agent.Text</option>
+                    }
+                </select>
+
+            </div>
+
+
+
+            <button type="submit" class="btn btn-success">Modificar</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    var amenidadesArray = [];
+
+    function agregarAmenidad() {
+        var amenidad = document.getElementById("amenidadesInput").value;
+        amenidadesArray.push(amenidad);
+        actualizarAmenidades();
+        limpiarCampoAmenidades();
+    }
+    function eliminarAmenidad(index) {
+        amenidadesArray.splice(index, 1);
+        actualizarAmenidades();
+    }
+
+    function actualizarAmenidades() {
+        var amenidadesList = document.getElementById("amenidadesList");
+        amenidadesList.innerHTML = "";
+        amenidadesArray.forEach(function (amenidad, index) {
+            var li = document.createElement("li");
+            li.textContent = amenidad;
+            li.className = "list-group-item"
+
+            var eliminarButton = document.createElement("button");
+            eliminarButton.textContent = "Eliminar";
+            eliminarButton.className = "btn btn-danger btn-xs float-right ml-2";
+            eliminarButton.addEventListener("click", function () {
+                eliminarAmenidad(index);
+            });
+
+            li.appendChild(eliminarButton);
+            amenidadesList.appendChild(li);
+        });
+        document.getElementById("amenidadesHidden").value = amenidadesArray.join(",");
+    }
+
+    function limpiarCampoAmenidades() {
+        document.getElementById("amenidadesInput").value = "";
+    }
+</script>

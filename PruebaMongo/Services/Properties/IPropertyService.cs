@@ -1,4 +1,5 @@
-﻿using PruebaMongo.Models;
+﻿using MongoDB.Bson;
+using PruebaMongo.Models;
 
 namespace PruebaMongo.Services;
 
@@ -14,4 +15,9 @@ public interface IPropertyService
     public List<string> getAllState();
     public List<string> getAllLocation();
     public List<Property> searchProperty(string state, string location, string operation);
+
+    public void EditProperty(Property property);
+
+    public void DeleteProperty(string id);
+    public Property GetProperyForObjectId(ObjectId id);
 }

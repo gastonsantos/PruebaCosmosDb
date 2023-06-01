@@ -869,3 +869,4 @@ C:\Users\erika\Desktop\PruebaCosmosDb\PruebaMongo\obj\Debug\net6.0\refint\Prueba
 C:\Users\erika\Desktop\PruebaCosmosDb\PruebaMongo\obj\Debug\net6.0\PruebaMongo.pdb
 C:\Users\erika\Desktop\PruebaCosmosDb\PruebaMongo\obj\Debug\net6.0\PruebaMongo.genruntimeconfig.cache
 C:\Users\erika\Desktop\PruebaCosmosDb\PruebaMongo\obj\Debug\net6.0\ref\PruebaMongo.dll
+C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutAdmin.cshtml.rz.scp.css

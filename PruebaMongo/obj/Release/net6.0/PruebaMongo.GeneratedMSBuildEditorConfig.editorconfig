@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Gaston Mica y juan\Desktop\PruebaMongoDb\PruebaMongo\PruebaMongo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Admin/Agregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Admin/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Admin/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Admin/Modificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW9kaWZpY2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,12 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Property/SearchProperty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcU2VhcmNoUHJvcGVydHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Shared/_vpBuscadorView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF92cEJ1c2NhZG9yVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Gaston Mica y juan/Desktop/PruebaMongoDb/PruebaMongo/PruebaMongo/Views/Shared/_vpFooterView.cshtml]

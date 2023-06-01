@@ -3,6 +3,7 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using PruebaMongo.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PruebaMongo.Repository;
 
@@ -24,17 +25,45 @@ public class PropertyRepository : IPropertyRepository
 
     public Property GetPropiedadByID(string id)
     {
+        //var propiedad = _context.Propiedades.First(Prop => Prop.Id == new ObjectId(id));
         var propiedad = _context.Propiedades.FirstOrDefault(Prop => Prop.Id == new ObjectId(id));
-        _context.SaveChanges();
+        //_context.SaveChanges();
 
         return propiedad;
     }
+
+    public Property GetProperyForObjectId(ObjectId id)
+    {
+        var propiedad = _context.Propiedades.FirstOrDefault(Prop => Prop.Id == id);
+        return propiedad;
+    }
+
 
     public void InsertPropiedad(Property propiedad)
     {
         _context.Propiedades.Add(propiedad);
         _context.SaveChanges();
     }
+
+    public void DeleteProperty(string id)
+    {
+        var property = _context.Propiedades.FirstOrDefault(Prop => Prop.Id == new ObjectId(id));
+        if (property != null)
+        {
+            _context.Propiedades
+                .Remove(property);
+            _context.SaveChanges();
+        }
+        
+    }
+
+    public void EditProperty(Property property)
+    {
+            _context.Propiedades.Update(property);
+            _context.SaveChanges();
+       
+    }
+
 
     public List<string> getAllState()
     {

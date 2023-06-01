@@ -1,0 +1,46 @@
+
+@model List<Property>
+
+<div class="" >
+    <partial name="_vpBuscadorView"></partial>
+</div>
+
+<h1 class="mb-4"></h1>
+                <div class="my-2 d-flex justify-content-center">
+                <a href="/Admin/Agreagar/" class="btn btn-primary">Agregar</a ">
+                </div>
+@if (Model.Count > 0)
+{
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var propiedad in Model)
+        {
+            <a href="/Admin/Detalle/@propiedad.Id" class="text-decoration-none text-black">
+                <div class="col">
+                    <div class="card">
+                        <img src=@(propiedad.Imagen != null ? propiedad.Imagen : "/Assets/default-house-image.jpg") height="250" width="250" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@propiedad.Titulo</h5>
+                           
+                            <p class="card-text">Ubicacion: @propiedad.Ubicacion.Provincia, @propiedad.Ubicacion.Localidad</p>
+                            <p class="card-text">Metros Cuadrados: @propiedad.MetrosCuadrados</p>
+                            <p class="card-text">Baños: @propiedad.Banos</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">USD$ @propiedad.Precio</small>
+                           
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+
+
+}
+else
+{
+    <p>No se encontraron propiedades.</p>
+}
+
+
