@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PruebaMongo
 build_property.RootNamespace = PruebaMongo
-build_property.ProjectDir = C:\Users\Lea\Source\Repos\PruebaCosmosDb\PruebaMongo\
+build_property.ProjectDir = C:\Users\erika\Desktop\PruebaCosmosDb\PruebaMongo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lea\Source\Repos\PruebaCosmosDb\PruebaMongo
+build_property.MSBuildProjectDirectory = C:\Users\erika\Desktop\PruebaCosmosDb\PruebaMongo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Home/Index.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Property/Agregar.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/Agregar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQWdyZWdhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Property/Detalle.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/Detalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRGV0YWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Property/Favoritos.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/Favoritos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRmF2b3JpdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Property/Listar.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Property/SearchProperty.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/SearchProperty.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcU2VhcmNoUHJvcGVydHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Property/ShowRecommended.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Property/ShowRecommended.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcU2hvd1JlY29tbWVuZGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Shared/Error.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Shared/_vpBuscadorView.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/_vpBuscadorView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF92cEJ1c2NhZG9yVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Shared/_vpFooterView.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/_vpFooterView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF92cEZvb3RlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Shared/_vpNosotrosView.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/_vpNosotrosView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF92cE5vc290cm9zVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/_ViewImports.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/_ViewStart.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lea/Source/Repos/PruebaCosmosDb/PruebaMongo/Views/Shared/_Layout.cshtml]
+[C:/Users/erika/Desktop/PruebaCosmosDb/PruebaMongo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-aqxmwm3afh
